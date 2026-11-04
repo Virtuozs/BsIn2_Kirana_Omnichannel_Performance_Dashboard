@@ -1,0 +1,15 @@
+column_name,total_rows,null_or_blank,null_pct,distinct_count,min_value,max_value
+customer_id,209626,0,0.0,33060,M000001,M042000
+item_price,209626,0,0.0,660,100900,Rp996.900
+line_no,209626,0,0.0,3,1,3
+order_date,209626,0,0.0,132452,01/01/2024 00:02,31/12/2025 23:59
+order_no,209626,0,0.0,140573,ORD24010000001,ORD26060140573
+order_status,209626,0,0.0,2,CANCELLED,COMPLETED
+payment_method,209626,0,0.0,5,COD,Virtual Account
+qty,209626,0,0.0,2,1,2
+sales_channel,209626,0,0.0,12,APP,website
+ship_city,209626,0,0.0,26,Balikpapan,Yogyakarta
+ship_province,209626,2109,1.01,13,Bali,Sumatera Utara
+sku,209626,0,0.0,600,KR-BB-0001,KR-SO-0070
+voucher_amount,209626,0,0.0,925,0,99900
+voucher_code,209626,180705,86.2,40,APPDAY2404,RMDN26

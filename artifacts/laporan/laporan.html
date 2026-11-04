@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10pt; color: #1a1a1a; line-height: 1.38; }
+  h1 { font-size: 20pt; margin: 0 0 2mm 0; }
+  h2 { font-size: 14pt; margin: 6mm 0 2mm 0; border-bottom: 2px solid #2c3e50; padding-bottom: 1mm; page-break-after: avoid; color: #1a3e6e; }
+  h3 { font-size: 11pt; margin: 4mm 0 1mm 0; color: #1a3e6e; page-break-after: avoid; }
+  h4 { font-size: 10pt; margin: 3mm 0 1mm 0; page-break-after: avoid; }
+  .cover { text-align: center; padding-top: 50mm; }
+  .cover h1 { font-size: 24pt; margin-bottom: 4mm; }
+  .cover .sub { font-size: 13pt; color: #444; margin-bottom: 10mm; }
+  .cover table { width: 70%; margin: 0 auto; font-size: 10.5pt; }
+  .cover table td { padding: 1.5mm 3mm; text-align: left; border: none; }
+  .cover table td.label { font-weight: 700; width: 45%; }
+  .meta { font-size: 9pt; color: #666; margin-top: 2mm; }
+  table { border-collapse: collapse; width: 100%; margin: 2mm 0 3mm 0; font-size: 8.5pt; }
+  th, td { border: 1px solid #ccc; padding: 1.2mm 1.8mm; text-align: left; vertical-align: top; }
+  th { background: #f0f2f5; }
+  .callout { background: #fff8e1; border: 1px solid #ffd54f; padding: 2mm 3mm; margin: 2mm 0; font-size: 9.3pt; }
+  .ok { background: #e8f5e9; border: 1px solid #a5d6a7; padding: 2mm 3mm; margin: 2mm 0; font-size: 9.3pt; }
+  .tag { display: inline-block; font-size: 8pt; font-weight: 700; padding: 0.5mm 2mm; border-radius: 2mm; color: white; margin-right: 2mm; }
+  .tag-real { background: #2e7d32; }
+  .tag-data { background: #c62828; }
+  .reco { background: #eef4fb; border: 1px solid #a9c6e8; padding: 3mm; margin: 2mm 0; }
+  .pagebreak { page-break-before: always; }
+  .section-break { page-break-before: always; }
+  ul { margin: 1mm 0 2mm 0; padding-left: 5mm; }
+  li { margin-bottom: 0.8mm; }
+  .small { font-size: 8.3pt; color: #555; }
+  code { background: #f0f2f5; padding: 0 1mm; border-radius: 1mm; font-size: 8.5pt; }
+  pre { background: #f6f7f9; border: 1px solid #ddd; padding: 2mm 3mm; font-size: 8pt; overflow-wrap: break-word; white-space: pre-wrap; }
+  .parttitle { font-size: 16pt; color: #1a3e6e; margin: 0 0 1mm 0; }
+  .parttitle .eyebrow { display: block; font-size: 10pt; color: #888; font-weight: 400; margin-bottom: 1mm; }
+  .toc { font-size: 9.5pt; }
+  .toc li { margin-bottom: 1.2mm; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+<h1>Laporan UAS Business Intelligence Systems</h1>
+<div class="sub">KIRANA Omnichannel Performance Intelligence<br>Dashboard Keputusan Realokasi Promo dan Perbaikan Kinerja H2 2026</div>
+<table>
+<tr><td class="label">Nama</td><td>Taufiqurrahman</td></tr>
+<tr><td class="label">NIM</td><td>24130500005</td></tr>
+<tr><td class="label">Program Studi</td><td>Sains Data</td></tr>
+<tr><td class="label">Mata Kuliah</td><td>Business Intelligence Systems</td></tr>
+<tr><td class="label">Semester / Kelas</td><td>Semester 5 / Professional &amp; Akselerasi</td></tr>
+<tr><td class="label">Universitas</td><td>Universitas Cakrawala</td></tr>
+<tr><td class="label">Periode UAS</td><td>Blok A (28 Oktober - 04 November 2026)</td></tr>
+</table>
+</div>
+
+<div class="pagebreak"></div>
+<h2>Daftar Isi</h2>
+<ul class="toc">
+<li>Bagian A - Dokumentasi Teknis
+  <ul>
+    <li>A.1 Decision Statement</li>
+    <li>A.2 Data Profiling &amp; Data Quality Issue Log</li>
+    <li>A.3 Star Schema, Grain Statement &amp; Keputusan SCD</li>
+    <li>A.4 Pengujian Kualitas Data &amp; Rekonsiliasi</li>
+    <li>A.5 Kamus Metrik (KPI Dictionary)</li>
+  </ul>
+</li>
+<li>Bagian B - Insight Brief untuk Direktur Komersial</li>
+<li>Bagian C - Evaluasi Solusi BI &amp; Tata Kelola</li>
+<li>Pernyataan Penggunaan AI</li>
+</ul>
+
+<div class="section-break"></div>
+<div class="parttitle"><span class="eyebrow">BAGIAN A</span>Dokumentasi Teknis</div>
+
+<h2>A.1 Decision Statement</h2>
+
+<h3>Keputusan</h3>
+<p>Direktur Komersial KIRANA Home &amp; Living harus mengambil dua keputusan terkait untuk H2 2026.</p>
+<ol>
+<li><b>Realokasi anggaran promo</b>, antar-channel (Store / Website / Mobile App / Marketplace), antar-kategori produk, dan antar-mekanisme promo (Ramadan, Clearance, Member Day, App Payday, Mega Sale, Harbolnas).</li>
+<li><b>Penentuan toko/region yang masuk program perbaikan kinerja</b> H2 2026.</li>
+</ol>
+
+<h3>Pengambil Keputusan</h3>
+<ul>
+<li><b>Pemilik keputusan utama</b>, yaitu Direktur Komersial.</li>
+<li><b>Pemberi input / terdampak langsung</b>, yaitu Head of Store Operations (kinerja toko, isu operasional seperti renovasi), Head of E-Commerce (kinerja channel online, biaya platform), dan Finance Controller (validasi angka margin dan biaya channel).</li>
+</ul>
+
+<h3>Waktu Keputusan</h3>
+<p>Awal Juli 2026, menggunakan data historis 1 Januari 2024 sampai 30 Juni 2026 (FY2025 penuh + H1 2026), untuk diterapkan pada perencanaan H2 2026.</p>
+
+<h3>Mengapa Keputusan Ini Perlu Data yang Andal</h3>
+<p>Tim komersial dan finance saat ini punya angka penjualan yang berbeda karena data tersebar di sistem terpisah (POS, e-commerce, target Excel) yang belum pernah diintegrasikan. Direktur Komersial meminta satu sumber angka yang dapat dipercaya dan dashboard yang langsung menjawab pertanyaan bisnis di bawah ini.</p>
+
+<h3>Pemetaan Pertanyaan Bisnis ke Keputusan</h3>
+<table>
+<tr><th style="width:4%">#</th><th style="width:48%">Pertanyaan Bisnis</th><th>Mendukung Keputusan</th></tr>
+<tr><td>1</td><td>Bagaimana pencapaian net sales FY2025 dan H1 2026 terhadap target per channel, region, dan toko?</td><td>(2) Dasar untuk menilai toko/region mana yang tertinggal dari target</td></tr>
+<tr><td>2</td><td>Bagaimana tren, pola musiman, dan pergeseran kontribusi antar-channel?</td><td>(1) Dasar alokasi ulang anggaran promo ke channel yang tumbuh</td></tr>
+<tr><td>3</td><td>Kategori, channel, dan promo mana yang menekan gross margin dan contribution margin?</td><td>(1) Inti keputusan realokasi, membedakan promo yang menguntungkan vs. yang hanya membeli revenue</td></tr>
+<tr><td>4</td><td>Seberapa efektif promo dilihat dari kenaikan penjualan dan dampaknya pada margin?</td><td>(1) Menentukan mekanisme promo mana yang dilanjutkan atau dihentikan</td></tr>
+<tr><td>5</td><td>Toko mana yang berkinerja rendah, dan apakah penyebabnya bisnis atau masalah data?</td><td>(2) Inti keputusan program perbaikan toko, exclude kasus yang sebenarnya masalah data</td></tr>
+<tr><td>6</td><td>Bagaimana tingkat dan alasan retur per kategori dan channel?</td><td>(1) &amp; (2) Retur tinggi bisa mengindikasikan masalah kualitas produk atau masalah operasional toko</td></tr>
+<tr><td>7</td><td>Bagaimana aktivitas dan repeat purchase member per channel?</td><td>(1) Membedakan promo yang membangun loyalitas vs. yang hanya diskon sekali pakai</td></tr>
+</table>
+
+<h3>Definisi "Selesai"</h3>
+<p>Dashboard Metabase (dibangun di atas model DuckDB bersih, dengan definisi KPI yang disepakati) dan insight brief yang bisa langsung dipakai Direktur Komersial dalam rapat keputusan H2 2026, dengan seluruh angka di laporan sama dengan angka di dashboard.</p>
+
+<div class="pagebreak"></div>
+<h2>A.2 Data Profiling &amp; Data Quality Issue Log</h2>
+
+<h3>Ringkasan Profiling 15 Sumber Data</h3>
+<p>Profiling dijalankan terhadap seluruh file di <code>Data/raw_data/</code> sebelum pembersihan apa pun, menghasilkan jumlah baris, hash sumber, baris duplikat penuh, dan grup duplikat kunci untuk tiap tabel.</p>
+<table>
+<tr><th>Tabel</th><th>File Sumber</th><th>Baris</th><th>Duplikat Penuh</th><th>Grup Duplikat Kunci</th></tr>
+<tr><td>sales_pos_transactions</td><td>sales_pos_transactions.csv</td><td>264.420</td><td>2.990</td><td>1.597</td></tr>
+<tr><td>sales_online_orders</td><td>sales_online_orders.csv</td><td>209.626</td><td>464</td><td>232</td></tr>
+<tr><td>products</td><td>products.csv</td><td>606</td><td>0</td><td>6</td></tr>
+<tr><td>product_cost_history</td><td>product_cost_history.csv</td><td>850</td><td>0</td><td>0</td></tr>
+<tr><td>stores</td><td>stores.csv</td><td>18</td><td>0</td><td>0</td></tr>
+<tr><td>store_region_history</td><td>store_region_history.csv</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>store_events</td><td>store_events.csv</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>customers</td><td>customers.csv</td><td>42.320</td><td>0</td><td>0</td></tr>
+<tr><td>returns</td><td>returns.csv</td><td>18.090</td><td>0</td><td>0</td></tr>
+<tr><td>promotions</td><td>promotions.csv</td><td>73</td><td>0</td><td>0</td></tr>
+<tr><td>channel_fee_rates</td><td>channel_fee_rates.csv</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>pos_sync_log</td><td>pos_sync_log.csv</td><td>16.036</td><td>0</td><td>0</td></tr>
+<tr><td>target_net_sales_2025 / h1_2026 / target_gm</td><td>sales_targets_2025_2026.xlsx</td><td>9 / 9 / 4</td><td>0</td><td>0</td></tr>
+</table>
+<p class="small">Sumber lengkap ada di <code>evidence/task1_profiling/profiling_summary.md</code> dan <code>evidence/task1_profiling/*__columns.csv</code> (profil per kolom tiap tabel).</p>
+
+<h3>Data Quality Issue Log (14 Isu)</h3>
+<p>Setiap isu dicatat dengan jumlah baris dan nilai Rupiah yang terdampak, keputusan penanganan, dan alasannya, supaya tidak ada pembersihan data yang dilakukan tanpa jejak. Daftar lengkap (termasuk kutipan query verifikasi) ada di <code>artifacts/task1/data_quality_issue_log.csv</code> dan <code>artifacts/task1/issue_checks.sql</code>.</p>
+<table>
+<tr><th style="width:8%">Isu</th><th style="width:34%">Ringkasan Masalah</th><th style="width:16%">Dampak</th><th style="width:42%">Keputusan Penanganan</th></tr>
+<tr><td>ISSUE-01</td><td>Baris duplikat persis (re-export) di sales_pos_transactions, kunci (trx_id, line_no)</td><td>1.495 baris dibuang, Rp360,9jt</td><td>DISTINCT dedupe di staging, simpan 1 baris per grup identik</td></tr>
+<tr><td>ISSUE-02</td><td>(trx_id, line_no) tidak unik meski setelah ISSUE-01, karena voucher baris asli berbeda</td><td>204 baris, 102 grup bentrok</td><td>Surrogate key sales_line_sk via ROW_NUMBER, grain tidak memakai (trx_id, line_no)</td></tr>
+<tr><td>ISSUE-03</td><td>Format SKU tidak konsisten (huruf kecil / spasi)</td><td>2.650 baris, Rp645,7jt berisiko gagal join</td><td>Normalisasi UPPER(TRIM(sku)) sebelum join ke dim_product</td></tr>
+<tr><td>ISSUE-04</td><td>Format tanggal online DD/MM/YYYY HH:MM salah terdeteksi "unparseable" oleh cast generik</td><td>209.626 baris (100%)</td><td>Parse eksplisit try_strptime dengan format yang benar, bukan TRY_CAST generik</td></tr>
+<tr><td>ISSUE-05</td><td>Baris duplikat persis di sales_online_orders, kunci (order_no, line_no)</td><td>232 baris dibuang, Rp48,9jt</td><td>DISTINCT dedupe di staging</td></tr>
+<tr><td>ISSUE-06</td><td>6 SKU punya 2 baris master, versi aktif dan versi lama berakhiran "(old)"</td><td>6 baris dikecualikan, Rp0 (harga/HPP identik)</td><td>Kecualikan baris "(old)", pertahankan versi aktif agar dim_product 1 baris per SKU</td></tr>
+<tr><td>ISSUE-07</td><td>1 baris retur merujuk original_trx_id yang tidak ada di sales_pos_transactions</td><td>1 baris, Rp178.900</td><td>Baris retur tetap disimpan dan dihitung, ditandai tidak dapat di-join ke fact_sales</td></tr>
+<tr><td>ISSUE-08</td><td>promo_code "B2B-CORP" dipakai di POS tapi tidak terdaftar di promotions.csv</td><td>14 baris, Rp499,9jt</td><td>Baris penjualan tetap masuk fact_sales, dim_promo diberi 1 baris sintetis berstatus "tidak terdaftar"</td></tr>
+<tr><td>ISSUE-09</td><td>store_code 17 toko nyata muncul dengan variasi huruf kecil/besar</td><td>3.555 baris</td><td>Normalisasi UPPER(TRIM(store_code)) di staging</td></tr>
+<tr><td>ISSUE-10</td><td>store_code "TRN-99" tidak terdaftar di stores.csv, format trx_id juga berbeda dari toko asli</td><td>320 baris, Rp76,4jt</td><td>Baris tetap masuk fact_sales, diberi label eksplisit "Toko Tidak Terdaftar" (is_registered=false)</td></tr>
+<tr><td>ISSUE-11</td><td>item_price online kadang berformat teks "Rp99.900" sehingga TRY_CAST AS DOUBLE gagal</td><td>36.143 baris tersisa setelah dedup</td><td>Parsing bertingkat, coba cast polos lalu strip "Rp" dan titik sebelum cast ulang</td></tr>
+<tr><td>ISSUE-12</td><td>sales_channel punya 12 varian ejaan/singkatan untuk 3 channel yang sama</td><td>31.445 baris</td><td>Normalisasi via CASE map ke label kanonik di staging</td></tr>
+<tr><td>ISSUE-13</td><td>Label region target Store beda ejaan dari label region_at_sale hasil resolusi fact_sales</td><td>108 baris target, Rp40,4 miliar target Store</td><td>Normalisasi region target via CASE map eksplisit sebelum join achievement</td></tr>
+<tr><td>ISSUE-14</td><td>Kategori produk punya varian ejaan/aksen untuk kategori yang sama (Home Decor/Home Décor, dll)</td><td>14 SKU, 12.280 baris, Rp2,3 miliar</td><td>Normalisasi via CASE map eksplisit ke ejaan mayoritas di staging.stg_products</td></tr>
+</table>
+
+<div class="pagebreak"></div>
+<h2>A.3 Star Schema, Grain Statement &amp; Keputusan SCD</h2>
+
+<h3>Grain Statement <code>model.fact_sales</code></h3>
+<div class="callout">Satu baris mewakili satu baris jual (sale line item) yang sudah diselesaikan, dari channel Store (POS) atau Online (Website / Mobile App / Marketplace), setelah baris duplikat hasil re-export persis dibuang (ISSUE-01, ISSUE-05).</div>
+<p>Identitas baris tidak memakai kunci baris dari sistem sumber. ISSUE-02 menemukan bahwa (trx_id, line_no) pada sales_pos_transactions.csv tidak unik bahkan setelah duplikat persis dibuang, karena 102 grup (204 baris) memiliki pasangan (trx_id, line_no) yang sama padahal baris jualnya benar-benar berbeda (cashier_id/sku/qty berbeda). Mempercayai pasangan itu sebagai primary key akan diam-diam membuang revenue yang sah. Sebagai gantinya, <code>fact_sales.sales_line_sk</code> adalah surrogate key yang dibuat di staging via <code>ROW_NUMBER() OVER (...)</code>, diuji di TEST-01 (blocking) dengan hasil 0 duplikat.</p>
+
+<h3>Keputusan SCD</h3>
+<h4>(a) Harga pokok produk, product_cost_history.csv</h4>
+<p>Dipakai sebagai bridge point-in-time bergaya SCD2, di-join saat fact dibangun, tidak dilipat ke dalam dim_product. dim_product hanya membawa atribut deskriptif terkini (nama/kategori/brand/harga sekarang) dengan SCD Type 1, karena atribut itu jarang berubah dan tidak memengaruhi perhitungan historis. <code>unit_cost</code>, sebaliknya, langsung menentukan HPP dan gross margin untuk penjualan historis, dan sumber data sudah memberi timeline SCD2 yang bersih (valid_from/valid_to per SKU). Bila ini salah ditangani, misalnya selalu memakai harga terkini, setiap penjualan sebelum perubahan harga terakhir akan menghitung margin dengan harga yang tidak berlaku saat itu, diam-diam mendistorsi gross margin dan contribution margin historis, yaitu KPI yang mendasari keputusan realokasi promo.</p>
+<h4>(b) Region toko, store_region_history.csv</h4>
+<p>Cakupan SCD2 penuh disintesis di <code>model.bridge_store_region_history</code>, di-join saat fact dibangun, bukan dibaca langsung dari dim_store. store_region_history.csv hanya mencatat toko yang benar-benar pernah pindah region (1 toko, BGR-01, pindah dari Jawa Barat ke Jabodetabek pada 2025-07-01). 17 toko lain disintesis sebagai baris "selalu berlaku" sejak 2024-01-01. Bila ditangani salah, setiap penjualan BGR-01 sebelum tanggal pindah akan terhitung ke target Jabodetabek, bukan Jawa Barat, padahal angka itu persis yang dipakai keputusan toko/region. TEST-05 (blocking) memverifikasi bridge ini tidak punya rentang tanggal yang tumpang tindih per toko.</p>
+<p class="small">Dua penanganan tambahan memakai pola yang sama, eksplisit dan tidak diam-diam jadi NULL. ISSUE-09 (normalisasi huruf besar/kecil store_code) dan ISSUE-10 (store TRN-99 diberi label eksplisit "Toko Tidak Terdaftar" alih-alih dibuang atau dipaksa cocok ke toko lain).</p>
+
+<h3>Diagram Star Schema</h3>
+<img src="../task2/star_schema_diagram.png" alt="Diagram star schema KIRANA" style="width:100%; max-width:100%; border:1px solid #ddd; margin:2mm 0;">
+<p class="small">Setiap tabel di atas berada di skema <code>model.*</code> pada DuckDB (mis. <code>model.dim_store</code>, <code>model.fact_sales</code>). <code>model.fact_returns.original_trx_id</code> dan <code>model.fact_target_net_sales</code> terhubung ke <code>fact_sales</code> sebagai referensi longgar (garis putus-putus), bukan foreign key yang dipaksakan database, karena 1 baris retur tidak bisa dicocokkan (ISSUE-07) dan target memiliki grain independen yang baru dibandingkan di lapisan metric view (Task 3).</p>
+<table>
+<tr><th>Tabel</th><th>Tipe</th><th>Grain</th></tr>
+<tr><td>dim_date</td><td>Dimension</td><td>1 baris per tanggal kalender, 2024-01-01..2026-12-31</td></tr>
+<tr><td>dim_product</td><td>Dimension (SCD1)</td><td>1 baris per SKU (setelah dedup ISSUE-06)</td></tr>
+<tr><td>dim_store</td><td>Dimension (SCD1)</td><td>1 baris per store_code (18 toko nyata + 1 tidak terdaftar, ISSUE-10)</td></tr>
+<tr><td>dim_channel</td><td>Dimension</td><td>1 baris per channel (4)</td></tr>
+<tr><td>dim_customer</td><td>Dimension (PII diminimalkan)</td><td>1 baris per customer_id + 1 baris NON_MEMBER</td></tr>
+<tr><td>dim_promo</td><td>Dimension</td><td>1 baris per promo_code (+ NO_PROMO + B2B-CORP tidak terdaftar, ISSUE-08)</td></tr>
+<tr><td>bridge_store_region_history</td><td>SCD2 bridge</td><td>1 baris per periode validitas region toko</td></tr>
+<tr><td>fact_sales</td><td>Fact</td><td>1 baris jual yang sudah diselesaikan (lihat grain statement)</td></tr>
+<tr><td>fact_returns</td><td>Fact</td><td>1 baris item retur (= grain returns.csv)</td></tr>
+<tr><td>fact_target_net_sales</td><td>Fact</td><td>1 angka target (channel, region, year, month), hasil unpivot sheet lebar sumber</td></tr>
+</table>
+<p class="small">Diagram visual lengkap ada di <code>artifacts/task2/star_schema.drawio</code>.</p>
+
+<h3>Minimalisasi PII</h3>
+<p><code>model.dim_customer</code> mengecualikan <code>full_name</code>, <code>phone</code>, <code>email</code>, dan <code>birth_date</code> sepenuhnya, dibuang di <code>staging.stg_customers</code>, tidak pernah dimuat ke lapisan model, sehingga tidak bisa sampai ke Metabase bahkan secara tidak sengaja.</p>
+
+<div class="pagebreak"></div>
+<h2>A.4 Pengujian Kualitas Data &amp; Rekonsiliasi</h2>
+
+<h3>8 Pengujian Kualitas Data</h3>
+<p>Dijalankan di <code>sql/04_quality_tests.sql</code>, hasilnya ditulis sebagai log append-only ke <code>model.dq_test_results</code> setiap kali pipeline berjalan. Satu pengujian (TEST-04) sengaja dibuat gagal untuk menunjukkan kasus yang memang perlu ditandai sebagai peringatan, bukan dipaksa lolos.</p>
+<table>
+<tr><th>Test</th><th style="width:30%">Nama Pengujian</th><th>Klasifikasi</th><th>Baris Gagal</th><th>Lolos</th><th style="width:26%">Keterangan</th></tr>
+<tr><td>TEST-01</td><td>sales_line_sk pada fact_sales unik</td><td>blocking</td><td>0</td><td>Ya</td><td>Surrogate key harus unik, kalau tidak seluruh agregat turunan salah</td></tr>
+<tr><td>TEST-02</td><td>sku pada dim_product unik</td><td>blocking</td><td>0</td><td>Ya</td><td>SKU ganda di dim_product merusak setiap join fact_sales (ISSUE-06)</td></tr>
+<tr><td>TEST-03</td><td>qty dan unit_price pada fact_sales tidak null</td><td>blocking</td><td>0</td><td>Ya</td><td>Baris jual tanpa qty/harga tidak bisa dijumlahkan ke net sales</td></tr>
+<tr><td>TEST-04</td><td>original_trx_id pada fact_returns selalu cocok ke fact_sales</td><td>warning</td><td>1</td><td>Tidak</td><td>Sengaja gagal (1 baris, ISSUE-07), kemungkinan celah pos_sync_log, bukan retur yang harus dibuang</td></tr>
+<tr><td>TEST-05</td><td>bridge_store_region_history tidak punya rentang tanggal tumpang tindih per toko</td><td>blocking</td><td>0</td><td>Ya</td><td>Rentang tumpang tindih membuat join region-at-sale menghasilkan baris ganda</td></tr>
+<tr><td>TEST-06</td><td>member_tier pada dim_customer adalah nilai yang dikenal</td><td>warning</td><td>0</td><td>Ya</td><td>Nilai tier tak terduga akan diam-diam lolos dari segmentasi efektivitas promo per tier</td></tr>
+<tr><td>TEST-07</td><td>region_at_sale pada fact_sales tidak pernah null</td><td>blocking</td><td>0</td><td>Ya</td><td>Region null akan diam-diam hilang dari setiap rollup tingkat region</td></tr>
+<tr><td>TEST-08</td><td>channel_code pada fact_sales salah satu dari 4 channel yang dikenal</td><td>warning</td><td>0</td><td>Ya</td><td>Kode channel tak dikenal gagal join dim_channel dan hilang dari KPI per-channel</td></tr>
+</table>
+
+<h3>Rekonsiliasi Baris dan Nilai, Raw ke Fact</h3>
+<table>
+<tr><th>Lapisan</th><th>Baris Raw</th><th>Baris Fact</th><th>Baris Dibuang</th><th>Nilai Raw (Rp)</th><th>Nilai Fact (Rp)</th><th>Catatan</th></tr>
+<tr><td>sales_pos_transactions &rarr; fact_sales (POS)</td><td>264.420</td><td>262.925</td><td>1.495</td><td>62.685.251.700</td><td>62.324.356.200</td><td>ISSUE-01, nilai tidak berubah oleh perbaikan normalisasi lain</td></tr>
+<tr><td>sales_online_orders &rarr; fact_sales (ONLINE)</td><td>209.626</td><td>209.394</td><td>232</td><td>47.493.993.000</td><td>47.445.077.400</td><td>ISSUE-05, nilai raw dihitung dengan parsing string Rp yang sama seperti staging</td></tr>
+<tr><td>returns &rarr; fact_returns</td><td>18.090</td><td>18.090</td><td>0</td><td>3.702.006.200</td><td>3.702.006.200</td><td>Tidak ada baris dibuang, termasuk 1 orphan ISSUE-07 yang ditandai matched_to_fact_sales=false</td></tr>
+</table>
+<p class="small">Detail lengkap ada di <code>evidence/task2_model/quality_tests_results.csv</code>, <code>evidence/task2_model/reconciliation.csv</code>, dan <code>evidence/task2_model/row_counts_by_layer.csv</code>.</p>
+
+<div class="pagebreak"></div>
+<h2>A.5 Kamus Metrik (KPI Dictionary)</h2>
+<p>10 KPI (melebihi minimum 8), seluruhnya diimplementasikan sebagai VIEW di <code>model.*</code> (<code>sql/06_kpi_views.sql</code>), supaya setiap pertanyaan dashboard memakai definisi, filter inklusi/eksklusi, dan resolusi dimensi yang identik. Aturan eksklusi global yang berlaku ke semua KPI penjualan adalah online <code>order_status='CANCELLED'</code> dibuang (12.733 dari 209.626 baris online), nilai net sales memakai <code>net_amount</code> yang sudah dinetkan dari diskon/voucher, dan biaya channel dihitung bertingkat waktu terhadap <code>staging.stg_channel_fee_rates</code> (komisi Marketplace naik dari 9,0% ke 11,5% per April 2025).</p>
+<table>
+<tr><th style="width:16%">KPI</th><th style="width:40%">Definisi Bisnis</th><th style="width:28%">Rumus SQL</th><th>Metric Owner</th></tr>
+<tr><td>01. Net Sales</td><td>Nilai penjualan bersih setelah diskon/voucher, tidak termasuk order yang dibatalkan</td><td><code>SUM(net_amount)</code> dari <code>vw_sales_metrics</code></td><td>Direktur Komersial</td></tr>
+<tr><td>02. Achievement vs Target %</td><td>Realisasi net sales dibanding target bulanan, per channel &amp; region</td><td><code>100*actual/target</code>, <code>vw_achievement_monthly</code></td><td>Direktur Komersial</td></tr>
+<tr><td>03. Gross Margin %</td><td>Margin kotor setelah HPP, sebelum biaya channel</td><td><code>100*SUM(net_amount-cogs_amount)/SUM(net_amount)</code></td><td>Direktur Komersial / Finance</td></tr>
+<tr><td>04. Contribution Margin %</td><td>Margin setelah HPP dan biaya channel, margin riil per channel</td><td><code>100*SUM(net_amount-cogs_amount-channel_fee_amount)/SUM(net_amount)</code></td><td>Direktur Komersial</td></tr>
+<tr><td>05. Return Rate</td><td>Proporsi nilai refund terhadap net sales (berbasis nilai, bukan unit)</td><td><code>100*SUM(refund_amount)/SUM(net_amount)</code></td><td>Manajer Operasional</td></tr>
+<tr><td>06. AOV</td><td>Rata-rata nilai bersih per transaksi/order, bukan per baris item</td><td><code>SUM(net_amount)/COUNT(DISTINCT source_doc_id)</code></td><td>Manajer Channel</td></tr>
+<tr><td>07. Jumlah Transaksi</td><td>Jumlah order/struk unik, bukan jumlah baris item</td><td><code>COUNT(DISTINCT source_doc_id)</code></td><td>Manajer Channel</td></tr>
+<tr><td>08. Active Members</td><td>Jumlah member unik (bukan guest) dengan minimal 1 transaksi dalam periode</td><td><code>COUNT(DISTINCT customer_id)</code> dari <code>vw_customer_order_monthly</code></td><td>Tim CRM / Loyalty</td></tr>
+<tr><td>09. Repeat Rate</td><td>Proporsi member yang bertransaksi lebih dari 1 kali sepanjang window data</td><td><code>100*SUM(is_repeat_customer)/COUNT(*)</code> dari <code>vw_customer_lifetime</code></td><td>Tim CRM / Loyalty</td></tr>
+<tr><td>10. Promo Lift</td><td>Kenaikan/penurunan AOV ketika transaksi memakai promo dibanding tidak, per kategori</td><td><code>(AOV_promo-AOV_nonpromo)/AOV_nonpromo*100</code></td><td>Tim Marketing / Promo</td></tr>
+</table>
+<p class="small">Setiap angka sanity check KPI di atas diverifikasi langsung terhadap <code>db/kirana.duckdb</code>. Definisi lengkap (grain, inklusi/eksklusi, target/ambang, dan query sanity check) ada di <code>artifacts/task3/kpi_dictionary.md</code>. Lima view yang mendukung seluruh KPI adalah <code>vw_sales_metrics</code>, <code>vw_returns_metrics</code>, <code>vw_achievement_monthly</code>, <code>vw_customer_order_monthly</code>, dan <code>vw_customer_lifetime</code>, seluruhnya <code>CREATE OR REPLACE VIEW</code> tanpa materialisasi.</p>
+
+<div class="section-break"></div>
+<div class="parttitle"><span class="eyebrow">BAGIAN B</span>Insight Brief untuk Direktur Komersial</div>
+<p class="meta">Ditujukan untuk Direktur Komersial, disusun oleh Tim BI, periode data Jan 2024 s.d. Jun 2026. Sumber data adalah <code>model.vw_sales_metrics</code>, <code>model.vw_achievement_monthly</code>, dan <code>model.vw_returns_metrics</code> (lihat <code>artifacts/task3/kpi_dictionary.md</code>). Semua angka diverifikasi langsung terhadap <code>db/kirana.duckdb</code>, bukan estimasi.</p>
+
+<h2>Ringkasan Eksekutif</h2>
+<p>Ada dua keputusan yang perlu diambil, yaitu <b>(1) realokasi anggaran promo</b> dan <b>(2) penentuan toko/region untuk program perbaikan kinerja</b>. Enam temuan berikut secara langsung mendukung kedua keputusan tersebut. Temuan paling kritisnya adalah <b>promo yang berjalan saat ini justru menurunkan nilai rata-rata transaksi di ketujuh kategori produk tanpa kecuali</b> (pola yang konsisten dan bukan kebetulan data), sementara <b>channel Marketplace kehilangan hampir sepertiga margin kotornya ke biaya komisi</b>, menjadikan marketplace channel paling mahal untuk dibiayai promo tambahan.</p>
+
+<h2>Temuan Terkuantifikasi</h2>
+
+<div class="insight">
+<h3>1. Promo yang berjalan justru MENGECILKAN nilai transaksi, bukan membesarkannya, di semua 7 kategori</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">AOV transaksi berpromo Rp283.346, 26,7% lebih rendah dari AOV transaksi tanpa promo (Rp386.629), pola yang konsisten di seluruh 7 kategori produk, bukan anomali 1-2 kategori.</p>
+<table>
+<tr><th>Kategori</th><th>AOV Non-Promo</th><th>AOV Promo</th><th>Selisih</th><th>Nilai transaksi promo</th></tr>
+<tr><td>Elektronik Rumah Tangga</td><td>Rp624.392</td><td>Rp508.478</td><td>-18,6%</td><td>Rp1.133.905.200</td></tr>
+<tr><td>Home Decor</td><td>Rp233.990</td><td>Rp199.144</td><td>-14,9%</td><td>Rp2.751.371.100</td></tr>
+<tr><td>Bedding &amp; Bath</td><td>Rp312.137</td><td>Rp279.402</td><td>-10,5%</td><td>Rp2.012.534.400</td></tr>
+<tr><td>Fashion (volume promo terbesar)</td><td>Rp224.158</td><td>Rp204.756</td><td>-8,7%</td><td>Rp3.124.781.200</td></tr>
+</table>
+<div class="callout"><b>Mengapa ini kejadian bisnis nyata, bukan isu data.</b> Pola ini muncul di semua kategori secara konsisten (bukan 1 outlier), dihitung dari <code>net_amount</code> yang sudah bersih dari diskon (bukan artefak perhitungan diskon), dan didukung &gt;37.000 transaksi berpromo. Kemungkinan penyebab bisnisnya adalah mekanisme promo saat ini (diskon persentase tanpa syarat minimum belanja) yang menarik pembeli yang memang berniat belanja kecil, bukan mendorong pembeli menambah keranjang.</div>
+</div>
+
+<div class="insight">
+<h3>2. Marketplace, margin kotor sehat (42,5%), tapi margin kontribusi anjlok ke 32,0%, gap terbesar di antara semua channel</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Gap Gross Margin→Contribution Margin Marketplace = 10,5 poin persentase, jauh di atas Website (2,2pp), Mobile App (2,2pp), dan Store (0,7pp). Komisi marketplace naik dari 9,0% ke 11,5% sejak April 2025.</p>
+<table>
+<tr><th>Channel</th><th>Gross Margin %</th><th>Contribution Margin %</th><th>Gap</th></tr>
+<tr><td>Marketplace</td><td>42,5%</td><td>32,0%</td><td><b>10,5pp</b></td></tr>
+<tr><td>Website</td><td>45,7%</td><td>43,5%</td><td>2,2pp</td></tr>
+<tr><td>Mobile App</td><td>42,2%</td><td>40,0%</td><td>2,2pp</td></tr>
+<tr><td>Store</td><td>45,9%</td><td>45,2%</td><td>0,7pp</td></tr>
+</table>
+<p class="small">Total biaya channel Marketplace sepanjang data mencapai Rp2.285.302.077, setara 24,7% dari total margin kotor Marketplace (Rp9.237.466.300) yang hilang ke biaya platform.</p>
+<div class="callout">Ini kejadian bisnis nyata, terverifikasi langsung dari sumber kontrak komisi (<code>staging.stg_channel_fee_rates</code>, kenaikan tanggal 2025-04-01 dari 9,0%→11,5%), bukan kesalahan perhitungan.</div>
+</div>
+
+<div class="insight">
+<h3>3. Website konsisten di bawah target 2 tahun berturut-turut, meski tren membaik</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Achievement Website berada di 76,0% (2025) lalu naik ke 87,5% (H1 2026), channel dengan pencapaian terendah di kedua periode, walau sedang membaik +11,5pp.</p>
+<div class="callout">Perlu dicatat, Website juga channel dengan AOV promo-vs-nonpromo gap yang moderat dan fee channel rendah (2,2%), artinya target yang belum tercapai kemungkinan soal traffic/konversi, bukan soal biaya atau diskon berlebih. Perlu data traffic/konversi (di luar cakupan dataset ini) untuk diagnosis lanjutan.</div>
+</div>
+
+<div class="insight">
+<h3>4. Jawa Barat dan Sumatera, semua toko di kedua region ini di bawah target, 2 tahun berturut-turut</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Jawa Barat naik dari 85,6% (2025) ke 95,8% (H1 2026). Sumatera naik dari 86,8% (2025) ke 89,0% (H1 2026), satu-satunya region yang BELUM pernah mencapai target di kedua periode.</p>
+<table>
+<tr><th>Toko</th><th>Region</th><th>Transaksi</th><th>Net Sales</th></tr>
+<tr><td>BDG-01 (Bandung Dago)</td><td>Jawa Barat</td><td>11.257</td><td>Rp4.924.326.000</td></tr>
+<tr><td>BDG-02 (Bandung Kopo)</td><td>Jawa Barat</td><td>6.912</td><td>Rp2.925.379.700</td></tr>
+<tr><td>MDN-01 (Medan)</td><td>Sumatera</td><td>7.069</td><td>Rp2.994.383.800</td></tr>
+<tr><td>PLM-01 (Palembang)</td><td>Sumatera</td><td>6.069</td><td>Rp2.604.554.200</td></tr>
+</table>
+<div class="callout">Ini kejadian bisnis nyata yang persisten, bukan fluktuasi 1 bulan. Kedua region di bawah target pada DUA periode pelaporan berturut-turut, dan SEMUA toko (bukan 1 toko buruk di region yang sehat) berkontribusi pada kekurangan ini. Pola ini candidate kuat untuk program perbaikan kinerja toko/region.</div>
+</div>
+
+<div class="insight">
+<h3>5. Rp76,4 juta pendapatan dari toko tak terdaftar + Rp499,9 juta dari skema diskon di luar sistem promo resmi</h3>
+<span class="tag tag-data">ISU DATA / GOVERNANCE</span>
+<p class="finding"><code>store_code = 'TRN-99'</code> (320 baris, Rp76.366.200) tidak pernah terdaftar di <code>stores.csv</code>, dan format ID transaksinya pun berbeda dari 18 toko resmi, mengindikasikan sumber/terminal lain yang tidak terdokumentasi. Terpisah, <code>promo_code = 'B2B-CORP'</code> (14 baris, Rp499.918.500) dipakai di POS tapi tidak terdaftar di <code>promotions.csv</code>.</p>
+<div class="callout"><b>Ini murni isu data/governance, bukan sinyal kinerja.</b> Revenue-nya nyata dan tetap dihitung di laporan (lihat ISSUE-10 &amp; ISSUE-08, <code>artifacts/task1/data_quality_issue_log.csv</code>), tapi tidak bisa dialokasikan ke toko/promo manapun yang terdaftar sampai Store Operations/Marketing mengonfirmasi asalnya. <b>Tidak direkomendasikan</b> untuk dipakai sebagai dasar keputusan reward/punishment toko sebelum diklarifikasi.</div>
+</div>
+
+<div class="insight">
+<h3>6. Return rate Marketplace 3,3x lebih tinggi dari Store (6,39% vs 1,93%)</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Return rate per channel adalah Marketplace 6,39%, Mobile App 5,11%, Website 4,41%, Store 1,93%. Alasan retur terbanyak adalah "Ukuran tidak sesuai" (4.806 kasus) dan "Berubah pikiran" (3.001 kasus), keduanya khas pembelian online tanpa coba langsung.</p>
+<div class="callout">Pola return rate online &gt; offline konsisten dengan sifat channel (tidak bisa dicoba langsung), bukan anomali data. Relevan untuk Tab 4 dashboard dan sebagai konteks tambahan saat mengevaluasi margin kontribusi Marketplace di Temuan #2. Biaya retur belum termasuk dalam perhitungan contribution margin saat ini.</div>
+</div>
+
+<div class="pagebreak"></div>
+<h2>Rekomendasi #1 - Realokasi Anggaran Promo</h2>
+<div class="reco">
+<ul>
+<li><b>Ubah mekanisme promo dari diskon persentase polos menjadi syarat minimum belanja</b> (misalnya diskon berlaku di atas Rp300.000) khusus untuk kategori Elektronik Rumah Tangga dan Home Decor, dua kategori dengan penurunan AOV terbesar (-18,6% dan -14,9%). Estimasi dampaknya, bila AOV promo kembali setara AOV non-promo di kedua kategori ini saja, potensi tambahan nilai transaksi ±Rp 739.920.556 dari volume promo yang sama (dihitung dari gap AOV dikali jumlah transaksi promo kedua kategori, yaitu Elektronik Rumah Tangga Rp258.488.220 ditambah Home Decor Rp481.432.336).</li>
+<li><b>Kurangi proporsi anggaran promo yang dialokasikan ke channel Marketplace</b>, geser sebagian ke Store/Website, karena margin kontribusi Marketplace (32,0%) adalah yang terendah, dan subsidi promo di channel ini "membayar dua kali" (diskon + komisi platform 11,5%). Setiap Rp1 promo di Marketplace secara struktural menyisakan margin lebih kecil dibanding Rp1 yang sama di Store.</li>
+<li><b>Pertahankan mekanisme promo musiman (Ramadan Sale)</b>, satu-satunya kelompok promo dengan volume besar DAN budget jelas (Rp1,5 miliar/tahun, konsisten 3 tahun) yang bisa dievaluasi lift-nya secara terpisah dari promo reguler. Data saat ini masih mencampur keduanya di analisis kategori di atas.</li>
+</ul>
+<p class="small"><b>Risiko.</b> Mekanisme minimum-belanja bisa menurunkan volume transaksi kecil yang sebelumnya tertarik promo murni karena harga rendah. Perlu A/B test terbatas sebelum rollout penuh, bukan perubahan kebijakan sekaligus semua kategori.<br>
+<b>Data yang bisa mengubah rekomendasi ini.</b> Data cost-per-acquisition per channel (di luar dataset ini) relevan di sini. Bila Marketplace secara signifikan lebih murah untuk akuisisi pelanggan baru dibanding Store/Website, trade-off margin-vs-akuisisi perlu dihitung ulang, bukan murni margin.</p>
+</div>
+
+<h2>Rekomendasi #2 - Program Perbaikan Kinerja Toko/Region</h2>
+<div class="reco">
+<ul>
+<li><b>Masukkan region Jawa Barat dan Sumatera ke program perbaikan kinerja prioritas</b>, karena kedua region konsisten di bawah target 2 tahun berturut-turut, dan kekurangannya merata di semua toko (bukan 1 toko buruk), sehingga intervensi di level region (bukan toko individual) lebih tepat sasaran. Toko spesifiknya adalah BDG-01, BDG-02 (Jawa Barat), MDN-01, dan PLM-01 (Sumatera).</li>
+<li><b>Evaluasi apakah angka target itu sendiri realistis</b> sebelum mengasumsikan eksekusi toko yang bermasalah. Jawa Barat sudah membaik signifikan dari 85,6%→95,8% tanpa program khusus, mengindikasikan kemungkinan target 2025 ditetapkan terlalu tinggi relatif kondisi awal, bukan murni soal eksekusi toko.</li>
+<li><b>Jangan masukkan TRN-99 ke evaluasi kinerja toko manapun</b> sampai asal-usulnya diklarifikasi Store Operations (lihat Temuan #5), karena risikonya salah menghukum/menghargai toko yang tidak benar-benar bertanggung jawab atas transaksi tersebut.</li>
+</ul>
+<p class="small"><b>Risiko.</b> Kondisi ekonomi regional, kepadatan kompetitor, dan faktor lokal lain yang tidak ada di dataset ini bisa jadi penyebab utama, bukan eksekusi toko. Program perbaikan sebaiknya diawali riset lapangan singkat sebelum investasi besar.<br>
+<b>Data yang bisa mengubah rekomendasi ini.</b> Data kompetitor lokal, data demografi/daya beli regional, dan histori perubahan target per region (untuk memastikan target 2025 bukan kesalahan input) relevan di sini. Bila ada, perlu dicek dulu sebelum menetapkan program perbaikan toko secara formal.</p>
+</div>
+
+<p class="small" style="margin-top:4mm;">Evidence lengkap tiap angka di atas ada di <code>artifacts/task3/kpi_dictionary.md</code>, <code>model.vw_sales_metrics</code>/<code>vw_achievement_monthly</code>/<code>vw_returns_metrics</code>, dan tab "Storyline" di dashboard Metabase (<code>evidence/task5_insights/</code>).</p>
+
+<div class="section-break"></div>
+<div class="parttitle"><span class="eyebrow">BAGIAN C</span>Evaluasi Solusi BI &amp; Tata Kelola</div>
+
+<h2>Memo Evaluasi</h2>
+
+<h3>1. Apakah dashboard menjawab keputusan yang dibutuhkan?</h3>
+<p><b>Ya, untuk kedua keputusan</b>, dengan bukti langsung dari dashboard dan insight brief (Bagian B).</p>
+<ul>
+<li><b>Realokasi anggaran promo.</b> Tab 3 (Margin &amp; Promotion Effectiveness) menunjukkan secara langsung bahwa AOV transaksi berpromo 26,7% lebih rendah dari non-promo di semua kategori, dan gap Gross Margin→Contribution Margin Marketplace (10,5pp) jauh di atas channel lain, dua angka yang langsung dipakai sebagai dasar rekomendasi realokasi di insight brief, bukan inferensi tambahan di luar dashboard.</li>
+<li><b>Program perbaikan toko/region.</b> Tab 2 (Channel, Region &amp; Store Performance) menunjukkan achievement % per region dan per toko dengan warna status, memungkinkan identifikasi langsung bahwa Jawa Barat dan Sumatera konsisten di bawah target di semua tokonya, dasar rekomendasi program perbaikan di insight brief.</li>
+</ul>
+<p>Kedua keputusan juga didukung indikator kesegaran data dan penanda data tidak lengkap (Tab 1), sehingga pengambil keputusan tahu kapan harus menahan diri sebelum mempercayai angka toko/periode tertentu secara penuh.</p>
+
+<h3>2. Keterbatasan &amp; asumsi</h3>
+<table>
+<tr><th>Keterbatasan</th><th>Dampak</th></tr>
+<tr><td>Resolusi region untuk order online memakai heuristik provinsi/kota (lihat <code>sql/03_star_schema.sql</code>), bukan data region resmi dari sistem sumber</td><td>12.729 baris online (6,1% dari seluruh baris online) jatuh ke kategori "Lainnya" karena provinsi tujuan di luar 6 region resmi, tidak bisa dipetakan lebih presisi tanpa data tambahan dari sistem pengiriman</td></tr>
+<tr><td>Baris <code>qty</code> negatif di POS (2.086 baris) adalah void/pembatalan kasir dan tetap dimasukkan sebagai baris tersendiri (bukan di-net-kan ke baris aslinya)</td><td>Agregat nilai (net sales) tetap benar karena SUM menetralkan baris void secara otomatis, tapi metrik yang menghitung baris/unit mentah (bukan nilai) bisa under/over-count bila void tidak dipertimbangkan secara eksplisit</td></tr>
+<tr><td>Normalisasi label region target (ISSUE-13) dan kategori produk (ISSUE-14) memakai <code>CASE</code> map eksplisit, bukan solusi otomatis</td><td>Bila sumber data musim depan menambah varian ejaan baru yang belum terdaftar di map, baris itu akan lolos tanpa dinormalisasi secara diam-diam, perlu proses re-profiling berkala, bukan sekali jalan</td></tr>
+<tr><td><code>TRN-99</code> (toko tak terdaftar) dan <code>B2B-CORP</code> (promo tak terdaftar) belum diklarifikasi sumbernya oleh Store Operations/Marketing</td><td>Rp76,4 juta + Rp499,9 juta revenue tetap masuk laporan agregat tapi tidak bisa dialokasikan ke entitas manapun yang terdaftar sampai diklarifikasi</td></tr>
+<tr><td>Metabase yang dipakai adalah edisi open-source (OSS), fitur row-/column-level security (sandboxing) tidak tersedia, hanya ditawarkan di edisi Enterprise</td><td>Pembatasan akses per-region yang sesungguhnya (mis. Store Manager Jawa Barat hanya bisa melihat baris Jawa Barat) TIDAK bisa diimplementasikan murni lewat Metabase. Workaround yang dipakai dijelaskan di lampiran tata kelola §3</td></tr>
+<tr><td>Repeat rate member (89,2%) belum divalidasi silang terhadap sistem CRM sumber (hanya dihitung dari data transaksi di paket ini)</td><td>Angka tinggi ini bisa jadi genuinely benar (produk rumah tangga dibeli berulang) atau butuh konfirmasi tambahan dari tim CRM sebelum dipakai sebagai KPI loyalitas resmi</td></tr>
+<tr><td>Filter dashboard (Periode/Channel/Region/Kategori) dan drill-through tabel sudah benar secara konfigurasi (widget, pemetaan parameter, dan Field Filter semua terverifikasi benar lewat API Metabase), tetapi nilainya tidak sampai ke query kartu saat dijalankan. Diisolasi lewat pengujian langsung. Masalah ini muncul identik di dashboard baru yang sengaja dibuat minimal untuk pengujian, dan tidak muncul di dashboard contoh bawaan Metabase yang memakai database SQLite, hanya di koneksi database DuckDB proyek ini</td><td>Widget filter dan highlight baris berfungsi dan memperbarui parameter dashboard di URL, tetapi query kartu tetap mengembalikan angka tidak terfilter. Root cause-nya adalah batasan driver DuckDB kustom (<code>ghcr.io/motherduckdb/metabase-duckdb</code>) yang dipakai proyek ini, bukan kesalahan konfigurasi dashboard. Brief UAS sendiri mengantisipasi kerapuhan driver DuckDB ini dan menyediakan jalur alternatif resmi, yaitu menghubungkan Metabase ke PostgreSQL yang berisi hasil model dari DuckDB. Migrasi itu adalah perbaikan produksi yang disarankan untuk fitur ini</td></tr>
+</table>
+
+<h3>3. Apa yang perlu dikembangkan selanjutnya</h3>
+<ul>
+<li><b>Data traffic/konversi per channel</b> (di luar dataset ini) dibutuhkan untuk mendiagnosis akar masalah Website yang konsisten di bawah target (Insight #3, Bagian B).</li>
+<li><b>Data cost-per-acquisition per channel</b> dibutuhkan untuk menyeimbangkan trade-off margin-vs-akuisisi sebelum memotong promo Marketplace secara penuh (Rekomendasi #1, Bagian B).</li>
+<li><b>Row-level security produksi,</b> baik upgrade ke Metabase Enterprise/Pro, atau desain ulang akses lewat view DuckDB terpisah per region bila jumlah region tetap kecil dan stabil (6 region).</li>
+<li><b>Klarifikasi proses bisnis untuk <code>TRN-99</code> dan <code>B2B-CORP</code></b> bersama Store Operations dan Marketing, supaya revenue terkait bisa dialokasikan dengan benar, bukan terus mengambang di kategori "tidak terdaftar".</li>
+<li><b>Migrasi koneksi Metabase dari DuckDB ke PostgreSQL</b> (jalur alternatif yang sudah diantisipasi brief UAS), supaya filter dashboard dan drill-through yang konfigurasinya sudah benar bisa benar-benar memfilter seluruh kartu terkait, bukan hanya memperbarui parameter di URL.</li>
+</ul>
+
+<h3>Apakah machine learning (ML) diperlukan?</h3>
+<div class="callout">
+<b>Belum diperlukan pada tahap ini.</b> Alasannya, kedua keputusan yang jadi fokus proyek ini (realokasi promo, program toko/region) adalah pertanyaan <i>diagnostik</i> ("apa yang terjadi dan mengapa") yang terjawab tuntas lewat analisis deskriptif/perbandingan (KPI vs target, segmentasi kategori/channel, tren waktu) seperti yang sudah dibangun di Bagian A dan B. Tidak ada satu pun dari 6 insight di Bagian B yang membutuhkan model prediktif untuk ditemukan atau divalidasi.<br><br>
+ML akan jadi relevan di fase <i>berikutnya</i> jika organisasi bergerak ke pertanyaan <i>prediktif/preskriptif</i>, misalnya (a) <i>uplift modeling</i> untuk menargetkan promo ke segmen pelanggan yang benar-benar terdorong membeli lebih banyak (menjawab akar masalah Insight #1 secara otomatis per-transaksi, bukan per-kategori), atau (b) <i>demand forecasting</i> per toko/SKU untuk perencanaan inventori. Kedua kebutuhan ini belum ada di brief keputusan Direktur Komersial saat ini, jadi investasi ML sebaiknya ditunda sampai salah satu dari dua hal itu benar-benar jadi prioritas bisnis berikutnya, bukan ditambahkan karena tersedia secara teknis.
+</div>
+
+<div class="pagebreak"></div>
+<h2>Lampiran Tata Kelola</h2>
+
+<h3>1. Pemilik Data per Sumber</h3>
+<table>
+<tr><th>File sumber</th><th>Pemilik/sistem asal</th><th>Skema di DuckDB</th></tr>
+<tr><td><code>sales_pos_transactions.csv</code></td><td>POS toko</td><td><code>raw.sales_pos_transactions</code> → <code>staging.stg_sales_pos</code></td></tr>
+<tr><td><code>sales_online_orders.csv</code></td><td>Platform e-commerce</td><td><code>raw.sales_online_orders</code> → <code>staging.stg_sales_online</code></td></tr>
+<tr><td><code>products.csv</code>, <code>product_cost_history.csv</code></td><td>Master produk / Finance</td><td><code>raw.products</code>, <code>raw.product_cost_history</code></td></tr>
+<tr><td><code>stores.csv</code>, <code>store_region_history.csv</code>, <code>store_events.csv</code></td><td>Master toko / Store Operations</td><td><code>raw.stores</code>, <code>raw.store_region_history</code>, <code>raw.store_events</code></td></tr>
+<tr><td><code>customers.csv</code></td><td>CRM</td><td><code>raw.customers</code> → <code>staging.stg_customers</code> (PII dibuang)</td></tr>
+<tr><td><code>returns.csv</code></td><td>Customer Service</td><td><code>raw.returns</code></td></tr>
+<tr><td><code>promotions.csv</code></td><td>Marketing</td><td><code>raw.promotions</code></td></tr>
+<tr><td><code>channel_fee_rates.csv</code></td><td>Finance</td><td><code>raw.channel_fee_rates</code></td></tr>
+<tr><td><code>sales_targets_2025_2026.xlsx</code></td><td>FP&amp;A</td><td><code>raw.target_net_sales_2025</code>, <code>raw.target_net_sales_h1_2026</code>, <code>raw.target_gm</code></td></tr>
+<tr><td><code>pos_sync_log.csv</code></td><td>IT</td><td><code>raw.pos_sync_log</code> → <code>staging.stg_pos_sync_log</code></td></tr>
+</table>
+<p class="small">Sumber datanya adalah <code>Data/README.md</code> (dikonfirmasi dengan tim yang menyusun paket data).</p>
+
+<h3>2. Klasifikasi PII pada Data Member &amp; Perlakuan</h3>
+<table>
+<tr><th>Kolom (<code>customers.csv</code>)</th><th>Klasifikasi</th><th>Perlakuan</th></tr>
+<tr><td><code>full_name</code></td><td>PII langsung</td><td><b>Dibuang di staging</b> (<code>staging.stg_customers</code>), tidak pernah sampai ke <code>model.dim_customer</code> atau Metabase</td></tr>
+<tr><td><code>phone</code></td><td>PII langsung</td><td>Dibuang di staging, sama seperti di atas</td></tr>
+<tr><td><code>email</code></td><td>PII langsung</td><td>Dibuang di staging, sama seperti di atas</td></tr>
+<tr><td><code>birth_date</code></td><td>PII langsung (sensitif, terkait usia)</td><td>Dibuang di staging, sama seperti di atas</td></tr>
+<tr><td><code>customer_id</code></td><td>Pseudonim (bukan PII langsung)</td><td>Dipertahankan, dipakai sebagai kunci agregasi (Active Members, Repeat Rate), tidak bisa diidentifikasi balik ke individu tanpa akses ke <code>raw.customers</code> yang sudah dibatasi</td></tr>
+<tr><td><code>gender</code>, <code>city</code>, <code>join_date</code>, <code>join_channel</code>, <code>member_tier</code></td><td>Atribut non-PII, agregat aman</td><td>Dipertahankan di <code>model.dim_customer</code> untuk segmentasi</td></tr>
+</table>
+<div class="ok"><b>Verifikasi.</b> Setiap query di balik 21 dashboard question (<code>evidence/task4_dashboard/dashboard_questions.sql</code>) sudah diperiksa manual. Tidak ada satupun yang mereferensikan <code>raw.customers</code> atau 4 kolom PII di atas.</div>
+
+<h3>3. Desain Hak Akses</h3>
+<p>Diimplementasikan langsung di Metabase (bukan hanya desain di atas kertas). Lihat <code>evidence/task6_governance/governance_{data,collection}_permissions.png</code> untuk bukti tangkapan layar konfigurasi final, dan verifikasi via <code>/api/permissions/graph</code> + <code>/api/collection/graph</code>.</p>
+<table>
+<tr><th>Group</th><th>Akses data (skema)</th><th>Akses koleksi dashboard</th></tr>
+<tr><td><b>Administrators</b></td><td>Penuh (query builder + native, semua skema)</td><td>Curate (penuh)</td></tr>
+<tr><td><b>Finance</b></td><td>Penuh (query builder + native, semua skema termasuk <code>raw</code>/<code>staging</code>). Finance butuh akses penuh untuk audit/rekonsiliasi</td><td>Curate (bisa edit dashboard &amp; pertanyaan)</td></tr>
+<tr><td><b>Store Manager</b></td><td><code>raw</code>/<code>staging</code>/<code>_meta</code> = <b>Blocked</b> (No access). <code>model</code> = Query builder <b>only</b> (native SQL dimatikan, supaya tidak bisa menulis query yang melewati definisi KPI/filter yang sudah dibakar di <code>model.vw_*</code>)</td><td>View (hanya lihat, tidak bisa edit)</td></tr>
+<tr><td><b>All Users</b> (grup default semua akun baru)</td><td><b>No access</b> sama sekali ke database KIRANA</td><td>No access ke koleksi KIRANA Dashboard</td></tr>
+</table>
+<div class="callout"><b>Keterbatasan jujur.</b> Ini BUKAN row-level security per region (mis. Store Manager toko Jawa Barat tidak otomatis dibatasi hanya melihat baris Jawa Barat). Fitur itu (sandboxing) adalah fitur Metabase Enterprise, tidak tersedia di edisi open-source yang dipakai proyek ini (dikonfirmasi langsung dari banner "Get advanced permissions... Try for free" di Admin &gt; Permissions). Desain produksi yang disarankan adalah upgrade ke Metabase Pro/Enterprise untuk sandboxing asli per region, atau sebagai alternatif open-source, buat dashboard terpisah per region dengan view DuckDB yang sudah difilter per region dan assign tiap Store Manager ke koleksi dashboard region-nya masing-masing.</div>
+
+<h3>4. Lineage dari Sumber ke Dashboard</h3>
+<p><code>Data/raw_data/*.csv, *.xlsx</code> &nbsp;→&nbsp; <code>raw.*</code> (<code>sql/01_load_raw.sql</code>) &nbsp;→&nbsp; <code>staging.*</code> (<code>sql/02_staging.sql</code>, pembersihan &amp; normalisasi per ISSUE-xx) &nbsp;→&nbsp; <code>model.dim_*</code>/<code>fact_*</code> (<code>sql/03_star_schema.sql</code>) &nbsp;→&nbsp; <code>model.dq_test_results</code>/<code>reconciliation</code> (<code>sql/04-05_*.sql</code>, gerbang kualitas) &nbsp;→&nbsp; <code>model.vw_*</code> (<code>sql/06_kpi_views.sql</code>, lapisan semantik KPI) &nbsp;→&nbsp; pertanyaan native SQL Metabase (<code>evidence/task4_dashboard/dashboard_questions.sql</code>) &nbsp;→&nbsp; dashboard "KIRANA Home &amp; Living - Omnichannel Performance" (5 tab).</p>
+<p class="small">Setiap langkah dieksekusi oleh skrip bernomor yang sama persis dengan urutan di atas (<code>scripts/01_profile_data.py</code>, <code>scripts/02_build_model.py</code>, <code>scripts/03_build_kpis.py</code>), dicatat di <code>_meta.run_log</code> (append-only, 1 baris per langkah per run). Lineage ini bisa diverifikasi ulang kapan saja lewat tabel itu, bukan hanya klaim dokumentasi.</p>
+
+<h3>5. Jadwal Refresh, Monitoring, Retensi</h3>
+<table>
+<tr><th>Aspek</th><th>Desain saat ini / rekomendasi produksi</th></tr>
+<tr><td><b>Jadwal refresh</b></td><td>Saat ini masih manual, dijalankan ulang (<code>scripts/02_build_model.py</code> lalu <code>scripts/03_build_kpis.py</code>) setiap kali ada file sumber baru. Rekomendasi produksinya adalah harian setelah <code>pos_sync_log.csv</code> hari itu tersedia (biasanya dini hari, berdasarkan kolom <code>synced_at</code> di data contoh), dijadwalkan via cron/Airflow memanggil kedua skrip berurutan.</td></tr>
+<tr><td><b>Monitoring</b></td><td><code>_meta.run_log</code> mencatat status (<code>OK</code>/<code>FAILED</code>) tiap langkah pipeline dengan timestamp dan hash file sumber, bisa dipakai sebagai sumber alert (mis. kirim notifikasi bila baris terbaru <code>status='FAILED'</code>). <code>model.dq_test_results</code> mencatat hasil 8 uji kualitas setiap run. TEST bertipe <i>blocking</i> yang gagal sebaiknya menghentikan refresh produksi, TEST bertipe <i>warning</i> cukup dicatat.</td></tr>
+<tr><td><b>Retensi</b></td><td><code>_meta.run_log</code> dan <code>model.dq_test_results</code> bersifat append-only (tidak pernah dihapus), jejak audit lengkap sepanjang umur proyek. Data transaksi mentah (<code>raw.*</code>) mengikuti jendela data sumber (Jan 2024 - Jun 2026 saat ini). Rekomendasi produksinya adalah retensi minimal 24 bulan bergulir untuk mendukung perbandingan year-over-year di KPI Achievement vs Target.</td></tr>
+</table>
+
+<div class="section-break"></div>
+<h2>Pernyataan Penggunaan AI</h2>
+<p>AI assistant (Claude Code) digunakan sepanjang pengerjaan UAS ini untuk belajar dan debugging, sesuai batasan yang diizinkan brief. Penggunaannya meliputi:</p>
+<ul>
+<li>Menulis dan men-debug skrip SQL DuckDB (<code>sql/01-06_*.sql</code>) dan skrip orkestrasi Python (<code>scripts/*.py</code>) berdasarkan keputusan desain (grain, SCD, aturan inklusi/eksklusi KPI) yang ditetapkan untuk proyek ini.</li>
+<li>Menyusun dan memformat dokumentasi (decision statement, grain statement, kamus metrik, insight brief, memo evaluasi) dari angka dan temuan yang sudah dihitung terlebih dahulu terhadap <code>db/kirana.duckdb</code>.</li>
+</ul>
+<p><b>Semua angka pada dashboard, insight brief, dan laporan ini dihitung langsung dari model DuckDB yang dibangun di proyek ini sendiri</b> (<code>db/kirana.duckdb</code>, hasil skrip di <code>sql/</code> dan <code>scripts/</code>), bukan dikarang atau diestimasi oleh AI. Setiap klaim kuantitatif dapat diverifikasi ulang dengan menjalankan query sanity check yang dicantumkan di <code>artifacts/task3/kpi_dictionary.md</code> terhadap database tersebut.</p>
+
+</body>
+</html>

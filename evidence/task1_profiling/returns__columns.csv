@@ -1,0 +1,10 @@
+column_name,total_rows,null_or_blank,null_pct,distinct_count,min_value,max_value
+channel,18090,0,0.0,4,Marketplace,Website
+original_trx_id,18090,0,0.0,17673,BDG-01-240101-0000062,YGY-01-260620-0142049
+refund_amount,18090,0,0.0,1248,100000,99900
+return_date,18090,0,0.0,910,2024-01-03,2026-06-30
+return_id,18090,0,0.0,18090,RT0000001,RT0018090
+return_qty,18090,0,0.0,3,1,3
+return_reason,18090,0,0.0,8,Barang cacat,Warna berbeda dari foto
+sku,18090,0,0.0,596,KR-BB-0001,KR-SO-0070
+store_code,18090,12289,67.93,18,BDG-01,YGY-01

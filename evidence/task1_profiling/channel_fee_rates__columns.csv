@@ -1,0 +1,6 @@
+column_name,total_rows,null_or_blank,null_pct,distinct_count,min_value,max_value
+channel,5,0,0.0,4,Marketplace,Website
+fee_pct_of_net_sales,5,0,0.0,4,0.7,9.0
+note,5,0,0.0,4,Biaya payment gateway,MDR EDC/QRIS rata-rata
+valid_from,5,0,0.0,2,2024-01-01,2025-04-01
+valid_to,5,0,0.0,2,2025-03-31,2099-12-31

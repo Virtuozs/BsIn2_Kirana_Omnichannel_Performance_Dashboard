@@ -1,0 +1,4 @@
+layer,raw_rows,fact_rows,rows_dropped,raw_value,fact_value,note
+sales_pos_transactions -> fact_sales (POS),264420,262925,1495,62685251700.0,62324356200.0,ISSUE-01 (-1495 exact dupes); value unchanged by normalization fixes (ISSUE-03/09/10 don't change amounts)
+sales_online_orders -> fact_sales (ONLINE),209626,209394,232,47493993000.0,47445077400.0,"ISSUE-05 (-232 exact dupes); raw value computed with the same ISSUE-11 Rp-string parsing used in staging, so both sides are comparable"
+returns -> fact_returns,18090,18090,0,3702006200.0,3702006200.0,"No rows dropped -- fact_returns keeps all 18090 rows, including the 1 unmatched ISSUE-07 orphan (flagged via matched_to_fact_sales=false, not excluded)"

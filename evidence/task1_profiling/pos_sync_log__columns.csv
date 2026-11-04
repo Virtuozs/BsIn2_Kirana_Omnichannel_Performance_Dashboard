@@ -1,0 +1,6 @@
+column_name,total_rows,null_or_blank,null_pct,distinct_count,min_value,max_value
+business_date,16036,0,0.0,912,2024-01-01,2026-06-30
+rows_uploaded,16036,0,0.0,71,0,92
+store_code,16036,0,0.0,18,BDG-01,YGY-01
+sync_status,16036,0,0.0,3,FAILED,SUCCESS
+synced_at,16036,56,0.35,13659,2024-01-02 01:04,2026-07-01 01:49

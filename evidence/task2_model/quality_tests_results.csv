@@ -1,0 +1,9 @@
+run_ts,test_id,test_name,classification,rows_failed,passed,description
+2026-10-30 18:22:05.541331,TEST-01,fact_sales.sales_line_sk is unique,blocking,0,true,Surrogate line key must be unique or every downstream aggregate is wrong
+2026-10-30 18:22:05.541331,TEST-02,dim_product.sku is unique,blocking,0,true,Duplicate SKU in dim_product breaks every fact_sales join (ISSUE-06)
+2026-10-30 18:22:05.541331,TEST-03,fact_sales.qty and unit_price are not null,blocking,0,true,A sale line with no quantity or price cannot be summed into net sales
+2026-10-30 18:22:05.541331,TEST-04,fact_returns.original_trx_id resolves to a fact_sales row,warning,1,false,"Intentionally failing test (1 row, ISSUE-07): return RT0012517 references a trx_id never present in POS -- likely a pos_sync_log gap, not a return to discard"
+2026-10-30 18:22:05.541331,TEST-05,bridge_store_region_history has no overlapping date ranges per store,blocking,0,true,Overlapping validity ranges would make the fact_sales region-at-sale join return duplicate rows
+2026-10-30 18:22:05.541331,TEST-06,dim_customer.member_tier is a known value,warning,0,true,Unexpected tier value would silently fall out of tier-based promo-effectiveness slicing
+2026-10-30 18:22:05.541331,TEST-07,fact_sales.region_at_sale is never null,blocking,0,true,A null region silently disappears from every region-level rollup (would regress ISSUE-09/ISSUE-10 fix)
+2026-10-30 18:22:05.541331,TEST-08,fact_sales.channel_code is one of the 4 known channels,warning,0,true,An unrecognized channel code would not join dim_channel and drop out of channel-sliced KPIs

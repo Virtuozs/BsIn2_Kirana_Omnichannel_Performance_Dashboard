@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="KIRANA Star Schema" id="kirana-star-schema">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- FACT_SALES (center) -->
+        <mxCell id="fact_sales" value="model.fact_sales&#10;&#10;GRAIN: 1 resolved sale line&#10;(POS or Online, post-dedup)&#10;&#10;sales_line_sk (surrogate PK)&#10;source_system, source_doc_id&#10;sale_date, sale_datetime&#10;channel_code -&gt; dim_channel&#10;store_code -&gt; dim_store&#10;sku -&gt; dim_product&#10;customer_id -&gt; dim_customer&#10;promo_code -&gt; dim_promo&#10;qty, unit_price, discount_amount&#10;region_at_sale (via bridge)&#10;unit_cost_at_sale (via SCD2 cost)&#10;gross_amount, net_amount, cogs_amount" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="380" width="300" height="300" as="geometry" />
+        </mxCell>
+
+        <!-- DIM_DATE -->
+        <mxCell id="dim_date" value="model.dim_date&#10;&#10;date_sk (PK), date&#10;year, quarter, month&#10;month_name, year_month&#10;is_weekend" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="220" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- DIM_PRODUCT -->
+        <mxCell id="dim_product" value="model.dim_product (SCD1)&#10;&#10;sku (PK)&#10;product_name, category&#10;subcategory, brand&#10;current_list_price&#10;current_unit_cost&#10;launch_date" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="140" y="260" width="220" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- DIM_STORE -->
+        <mxCell id="dim_store" value="model.dim_store (SCD1)&#10;&#10;store_code (PK)&#10;store_name, city, province&#10;region (CURRENT only)&#10;store_type, open_date&#10;is_registered (false=TRN-99)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="80" width="240" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- BRIDGE store region history -->
+        <mxCell id="bridge" value="model.bridge_store_region_history (SCD2 bridge)&#10;&#10;store_code, region&#10;valid_from, valid_to&#10;&#10;Resolves region AT SALE DATE,&#10;not current region. See&#10;grain_statement.md section 2b." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="280" width="260" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- SCD2 cost history (bridge, shown as staging source feeding fact directly) -->
+        <mxCell id="cost_scd" value="staging.stg_product_cost_history (SCD2 bridge)&#10;&#10;sku, unit_cost&#10;valid_from, valid_to&#10;&#10;Resolves COGS at sale date." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="140" y="440" width="240" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- DIM_CHANNEL -->
+        <mxCell id="dim_channel" value="model.dim_channel&#10;&#10;channel_code (PK)&#10;channel_group, is_online" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="600" y="760" width="220" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- DIM_CUSTOMER -->
+        <mxCell id="dim_customer" value="model.dim_customer (PII-minimized)&#10;&#10;customer_id (PK)&#10;gender, city&#10;join_date, join_channel&#10;member_tier&#10;+ 1 synthetic NON_MEMBER row&#10;&#10;NOTE: full_name/phone/email/&#10;birth_date dropped in staging,&#10;never reach this table." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="140" y="600" width="250" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- DIM_PROMO -->
+        <mxCell id="dim_promo" value="model.dim_promo&#10;&#10;promo_code (PK)&#10;promo_name, channel_scope&#10;category_scope, discount_pct&#10;start_date, end_date, budget_idr&#10;member_only, is_unregistered&#10;+ NO_PROMO + B2B-CORP (unregistered)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="600" width="260" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- FACT_RETURNS -->
+        <mxCell id="fact_returns_full" value="model.fact_returns&#10;&#10;GRAIN: 1 returned item line&#10;&#10;return_id (PK), return_date&#10;original_trx_id, channel, store_code&#10;sku, return_qty, refund_amount&#10;return_reason&#10;matched_to_fact_sales (bool)&#10;&#10;1 row = false (ISSUE-07: intentional&#10;TEST-04 failure, kept not dropped)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="260" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- FACT_TARGET_NET_SALES -->
+        <mxCell id="fact_target" value="model.fact_target_net_sales&#10;&#10;GRAIN: 1 (channel, region, year,&#10;month) target figure&#10;&#10;channel, region&#10;target_year, month_num&#10;target_net_sales&#10;&#10;Unpivoted from wide source sheets.&#10;Independent grain -- compared to&#10;fact_sales in Task 3 metric views." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="400" width="260" height="190" as="geometry" />
+        </mxCell>
+
+        <!-- EDGES -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="dim_date"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="dim_product"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="dim_store"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="dim_channel"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="dim_customer"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="dim_promo"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;dashed=1;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="bridge"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;dashed=1;rounded=0;html=1;" edge="1" parent="1" source="bridge" target="dim_store"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;dashed=1;rounded=0;html=1;" edge="1" parent="1" source="fact_sales" target="cost_scd"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;dashed=1;rounded=0;html=1;endArrow=open;" edge="1" parent="1" source="fact_returns_full" target="fact_sales" value="original_trx_id -&gt; source_doc_id&#10;(not FK-enforced, 1 orphan)"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;dashed=1;rounded=0;html=1;endArrow=open;" edge="1" parent="1" source="fact_target" target="fact_sales" value="compared in Task 3&#10;metric views"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

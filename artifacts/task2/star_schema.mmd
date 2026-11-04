@@ -1,0 +1,121 @@
+erDiagram
+    dim_date {
+        int date_sk PK
+        date date
+        int year
+        int quarter
+        int month
+        string month_name
+        string year_month
+        boolean is_weekend
+    }
+
+    dim_product {
+        string sku PK
+        string product_name
+        string category
+        string subcategory
+        string brand
+        decimal current_list_price
+        decimal current_unit_cost
+        date launch_date
+    }
+
+    dim_store {
+        string store_code PK
+        string store_name
+        string city
+        string province
+        string region "current only"
+        string store_type
+        date open_date
+        boolean is_registered "false = TRN-99"
+    }
+
+    dim_channel {
+        string channel_code PK
+        string channel_group
+        boolean is_online
+    }
+
+    dim_customer {
+        string customer_id PK
+        string gender
+        string city
+        date join_date
+        string join_channel
+        string member_tier
+    }
+
+    dim_promo {
+        string promo_code PK
+        string promo_name
+        string channel_scope
+        string category_scope
+        decimal discount_pct
+        date start_date
+        date end_date
+        decimal budget_idr
+        boolean member_only
+        boolean is_unregistered
+    }
+
+    bridge_store_region_history {
+        string store_code FK
+        string region
+        date valid_from
+        date valid_to
+    }
+
+    fact_sales {
+        string sales_line_sk PK
+        string source_system
+        string source_doc_id
+        date sale_date
+        datetime sale_datetime
+        string channel_code FK
+        string store_code FK
+        string sku FK
+        string customer_id FK
+        string promo_code FK
+        decimal qty
+        decimal unit_price
+        decimal discount_amount
+        string region_at_sale "via bridge"
+        decimal unit_cost_at_sale "via SCD2 cost"
+        decimal gross_amount
+        decimal net_amount
+        decimal cogs_amount
+    }
+
+    fact_returns {
+        string return_id PK
+        date return_date
+        string original_trx_id "not FK-enforced, 1 orphan"
+        string channel
+        string store_code
+        string sku
+        decimal return_qty
+        decimal refund_amount
+        string return_reason
+        boolean matched_to_fact_sales
+    }
+
+    fact_target_net_sales {
+        string channel
+        string region
+        int target_year
+        int month_num
+        decimal target_net_sales
+    }
+
+    dim_date ||--o{ fact_sales : "date_sk"
+    dim_product ||--o{ fact_sales : "sku"
+    dim_store ||--o{ fact_sales : "store_code"
+    dim_channel ||--o{ fact_sales : "channel_code"
+    dim_customer ||--o{ fact_sales : "customer_id"
+    dim_promo ||--o{ fact_sales : "promo_code"
+    dim_store ||--o{ bridge_store_region_history : "store_code"
+    bridge_store_region_history }o--|| fact_sales : "region_at_sale"
+    fact_returns }o..o| fact_sales : "original_trx_id (not enforced)"
+    fact_target_net_sales }o..o| fact_sales : "compared in Task 3"

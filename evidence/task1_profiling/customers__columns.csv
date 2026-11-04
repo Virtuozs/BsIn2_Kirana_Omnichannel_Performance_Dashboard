@@ -1,0 +1,11 @@
+column_name,total_rows,null_or_blank,null_pct,distinct_count,min_value,max_value
+birth_date,42320,0,0.0,11511,1900-01-01,2006-12-28
+city,42320,0,0.0,22,Balikpapan,Yogyakarta
+customer_id,42320,0,0.0,42320,M000001,M042320
+email,42320,0,0.0,41829,adi.anggraini129@gmail.com,zahra.wijaya979@gmail.com
+full_name,42320,0,0.0,1650,Adi Anggraini,Zahra Wijaya
+gender,42320,0,0.0,2,F,M
+join_channel,42320,0,0.0,4,Marketplace,Website
+join_date,42320,0,0.0,1097,2023-06-16,2026-06-18
+member_tier,42320,0,0.0,3,Gold,Silver
+phone,42320,0,0.0,42000,+62 811-1035-8592,089899672085

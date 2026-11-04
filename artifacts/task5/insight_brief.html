@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10.3pt; color: #1a1a1a; line-height: 1.38; }
+  h1 { font-size: 18pt; margin: 0 0 2mm 0; }
+  h2 { font-size: 12.5pt; margin: 6mm 0 2mm 0; border-bottom: 2px solid #2c3e50; padding-bottom: 1mm; page-break-after: avoid; }
+  h3 { font-size: 11pt; margin: 4mm 0 1mm 0; color: #1a3e6e; page-break-after: avoid; }
+  .cover-sub { color: #555; font-size: 10.5pt; margin-bottom: 1mm; }
+  .meta { font-size: 9pt; color: #666; margin-top: 2mm; }
+  .insight { page-break-inside: avoid; margin-bottom: 5mm; border-left: 3px solid #2c3e50; padding-left: 3mm; }
+  .finding { font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; margin: 2mm 0 3mm 0; font-size: 9pt; }
+  th, td { border: 1px solid #ccc; padding: 1.3mm 2mm; text-align: left; }
+  th { background: #f0f2f5; }
+  .tag { display: inline-block; font-size: 8pt; font-weight: 700; padding: 0.5mm 2mm; border-radius: 2mm; color: white; margin-right: 2mm; }
+  .tag-real { background: #2e7d32; }
+  .tag-data { background: #c62828; }
+  .callout { background: #fff8e1; border: 1px solid #ffd54f; padding: 2mm 3mm; margin: 2mm 0; font-size: 9.3pt; }
+  .reco { background: #eef4fb; border: 1px solid #a9c6e8; padding: 3mm; margin: 2mm 0; }
+  .pagebreak { page-break-before: always; }
+  ul { margin: 1mm 0 2mm 0; padding-left: 5mm; }
+  li { margin-bottom: 0.8mm; }
+  .small { font-size: 8.5pt; color: #555; }
+</style>
+</head>
+<body>
+
+<h1>KIRANA Home &amp; Living Insight Brief</h1>
+<div class="cover-sub">Ditujukan untuk Direktur Komersial, disusun oleh Tim BI, periode data Jan 2024 s.d. Jun 2026</div>
+<div class="meta">Sumber data adalah <code>model.vw_sales_metrics</code>, <code>model.vw_achievement_monthly</code>, dan <code>model.vw_returns_metrics</code> (lihat <code>artifacts/task3/kpi_dictionary.md</code>). Semua angka diverifikasi langsung terhadap <code>db/kirana.duckdb</code>, bukan estimasi.</div>
+
+<h2>Ringkasan Eksekutif</h2>
+<p>Ada dua keputusan yang perlu diambil, yaitu <b>(1) realokasi anggaran promo</b> dan <b>(2) penentuan toko/region untuk program perbaikan kinerja</b>. Enam temuan berikut secara langsung mendukung kedua keputusan tersebut. Temuan paling kritisnya adalah <b>promo yang berjalan saat ini justru menurunkan nilai rata-rata transaksi di ketujuh kategori produk tanpa kecuali</b> (pola yang konsisten dan bukan kebetulan data), sementara <b>channel Marketplace kehilangan hampir sepertiga margin kotornya ke biaya komisi</b>, menjadikan marketplace channel paling mahal untuk dibiayai promo tambahan.</p>
+
+<h2>Temuan Terkuantifikasi</h2>
+
+<div class="insight">
+<h3>1. Promo yang berjalan justru MENGECILKAN nilai transaksi, bukan membesarkannya, di semua 7 kategori</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">AOV transaksi berpromo Rp283.346, 26,7% lebih rendah dari AOV transaksi tanpa promo (Rp386.629), pola yang konsisten di seluruh 7 kategori produk, bukan anomali 1-2 kategori.</p>
+<table>
+<tr><th>Kategori</th><th>AOV Non-Promo</th><th>AOV Promo</th><th>Selisih</th><th>Nilai transaksi promo</th></tr>
+<tr><td>Elektronik Rumah Tangga</td><td>Rp624.392</td><td>Rp508.478</td><td>-18,6%</td><td>Rp1.133.905.200</td></tr>
+<tr><td>Home Decor</td><td>Rp233.990</td><td>Rp199.144</td><td>-14,9%</td><td>Rp2.751.371.100</td></tr>
+<tr><td>Bedding &amp; Bath</td><td>Rp312.137</td><td>Rp279.402</td><td>-10,5%</td><td>Rp2.012.534.400</td></tr>
+<tr><td>Fashion (volume promo terbesar)</td><td>Rp224.158</td><td>Rp204.756</td><td>-8,7%</td><td>Rp3.124.781.200</td></tr>
+</table>
+<div class="callout"><b>Mengapa ini kejadian bisnis nyata, bukan isu data.</b> Pola ini muncul di semua kategori secara konsisten (bukan 1 outlier), dihitung dari <code>net_amount</code> yang sudah bersih dari diskon (bukan artefak perhitungan diskon), dan didukung &gt;37.000 transaksi berpromo. Kemungkinan penyebab bisnisnya adalah mekanisme promo saat ini (diskon persentase tanpa syarat minimum belanja) yang menarik pembeli yang memang berniat belanja kecil, bukan mendorong pembeli menambah keranjang.</div>
+</div>
+
+<div class="insight">
+<h3>2. Marketplace, margin kotor sehat (42,5%), tapi margin kontribusi anjlok ke 32,0%, gap terbesar di antara semua channel</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Gap Gross Margin→Contribution Margin Marketplace = 10,5 poin persentase, jauh di atas Website (2,2pp), Mobile App (2,2pp), dan Store (0,7pp). Komisi marketplace naik dari 9,0% ke 11,5% sejak April 2025.</p>
+<table>
+<tr><th>Channel</th><th>Gross Margin %</th><th>Contribution Margin %</th><th>Gap</th></tr>
+<tr><td>Marketplace</td><td>42,5%</td><td>32,0%</td><td><b>10,5pp</b></td></tr>
+<tr><td>Website</td><td>45,7%</td><td>43,5%</td><td>2,2pp</td></tr>
+<tr><td>Mobile App</td><td>42,2%</td><td>40,0%</td><td>2,2pp</td></tr>
+<tr><td>Store</td><td>45,9%</td><td>45,2%</td><td>0,7pp</td></tr>
+</table>
+<p class="small">Total biaya channel Marketplace sepanjang data mencapai Rp2.285.302.077, setara 24,7% dari total margin kotor Marketplace (Rp9.237.466.300) yang hilang ke biaya platform.</p>
+<div class="callout">Ini kejadian bisnis nyata, terverifikasi langsung dari sumber kontrak komisi (<code>staging.stg_channel_fee_rates</code>, kenaikan tanggal 2025-04-01 dari 9,0%→11,5%), bukan kesalahan perhitungan.</div>
+</div>
+
+<div class="insight">
+<h3>3. Website konsisten di bawah target 2 tahun berturut-turut, meski tren membaik</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Achievement Website berada di 76,0% (2025) lalu naik ke 87,5% (H1 2026), channel dengan pencapaian terendah di kedua periode, walau sedang membaik +11,5pp.</p>
+<div class="callout">Perlu dicatat, Website juga channel dengan AOV promo-vs-nonpromo gap yang moderat dan fee channel rendah (2,2%), artinya target yang belum tercapai kemungkinan soal traffic/konversi, bukan soal biaya atau diskon berlebih. Perlu data traffic/konversi (di luar cakupan dataset ini) untuk diagnosis lanjutan.</div>
+</div>
+
+<div class="insight">
+<h3>4. Jawa Barat dan Sumatera, semua toko di kedua region ini di bawah target, 2 tahun berturut-turut</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Jawa Barat naik dari 85,6% (2025) ke 95,8% (H1 2026). Sumatera naik dari 86,8% (2025) ke 89,0% (H1 2026), satu-satunya region yang BELUM pernah mencapai target di kedua periode.</p>
+<table>
+<tr><th>Toko</th><th>Region</th><th>Transaksi</th><th>Net Sales</th></tr>
+<tr><td>BDG-01 (Bandung Dago)</td><td>Jawa Barat</td><td>11.257</td><td>Rp4.924.326.000</td></tr>
+<tr><td>BDG-02 (Bandung Kopo)</td><td>Jawa Barat</td><td>6.912</td><td>Rp2.925.379.700</td></tr>
+<tr><td>MDN-01 (Medan)</td><td>Sumatera</td><td>7.069</td><td>Rp2.994.383.800</td></tr>
+<tr><td>PLM-01 (Palembang)</td><td>Sumatera</td><td>6.069</td><td>Rp2.604.554.200</td></tr>
+</table>
+<div class="callout">Ini kejadian bisnis nyata yang persisten, bukan fluktuasi 1 bulan. Kedua region di bawah target pada DUA periode pelaporan berturut-turut, dan SEMUA toko (bukan 1 toko buruk di region yang sehat) berkontribusi pada kekurangan ini. Pola ini candidate kuat untuk program perbaikan kinerja toko/region.</div>
+</div>
+
+<div class="insight">
+<h3>5. Rp76,4 juta pendapatan dari toko tak terdaftar + Rp499,9 juta dari skema diskon di luar sistem promo resmi</h3>
+<span class="tag tag-data">ISU DATA / GOVERNANCE</span>
+<p class="finding"><code>store_code = 'TRN-99'</code> (320 baris, Rp76.366.200) tidak pernah terdaftar di <code>stores.csv</code>, dan format ID transaksinya pun berbeda dari 18 toko resmi, mengindikasikan sumber/terminal lain yang tidak terdokumentasi. Terpisah, <code>promo_code = 'B2B-CORP'</code> (14 baris, Rp499.918.500) dipakai di POS tapi tidak terdaftar di <code>promotions.csv</code>.</p>
+<div class="callout"><b>Ini murni isu data/governance, bukan sinyal kinerja.</b> Revenue-nya nyata dan tetap dihitung di laporan (lihat ISSUE-10 &amp; ISSUE-08, <code>artifacts/task1/data_quality_issue_log.csv</code>), tapi tidak bisa dialokasikan ke toko/promo manapun yang terdaftar sampai Store Operations/Marketing mengonfirmasi asalnya. <b>Tidak direkomendasikan</b> untuk dipakai sebagai dasar keputusan reward/punishment toko sebelum diklarifikasi.</div>
+</div>
+
+<div class="insight">
+<h3>6. Return rate Marketplace 3,3x lebih tinggi dari Store (6,39% vs 1,93%)</h3>
+<span class="tag tag-real">KEJADIAN BISNIS NYATA</span>
+<p class="finding">Return rate per channel adalah Marketplace 6,39%, Mobile App 5,11%, Website 4,41%, Store 1,93%. Alasan retur terbanyak adalah "Ukuran tidak sesuai" (4.806 kasus) dan "Berubah pikiran" (3.001 kasus), keduanya khas pembelian online tanpa coba langsung.</p>
+<div class="callout">Pola return rate online &gt; offline konsisten dengan sifat channel (tidak bisa dicoba langsung), bukan anomali data. Relevan untuk Tab 4 dashboard dan sebagai konteks tambahan saat mengevaluasi margin kontribusi Marketplace di Temuan #2. Biaya retur belum termasuk dalam perhitungan contribution margin saat ini.</div>
+</div>
+
+<div class="pagebreak"></div>
+<h2>Rekomendasi #1 - Realokasi Anggaran Promo</h2>
+<div class="reco">
+<ul>
+<li><b>Ubah mekanisme promo dari diskon persentase polos menjadi syarat minimum belanja</b> (misalnya diskon berlaku di atas Rp300.000) khusus untuk kategori Elektronik Rumah Tangga dan Home Decor, dua kategori dengan penurunan AOV terbesar (-18,6% dan -14,9%). Estimasi dampaknya, bila AOV promo kembali setara AOV non-promo di kedua kategori ini saja, potensi tambahan nilai transaksi ±Rp 739.920.556 dari volume promo yang sama (dihitung dari gap AOV dikali jumlah transaksi promo kedua kategori, yaitu Elektronik Rumah Tangga Rp258.488.220 ditambah Home Decor Rp481.432.336).</li>
+<li><b>Kurangi proporsi anggaran promo yang dialokasikan ke channel Marketplace</b>, geser sebagian ke Store/Website, karena margin kontribusi Marketplace (32,0%) adalah yang terendah, dan subsidi promo di channel ini "membayar dua kali" (diskon + komisi platform 11,5%). Setiap Rp1 promo di Marketplace secara struktural menyisakan margin lebih kecil dibanding Rp1 yang sama di Store.</li>
+<li><b>Pertahankan mekanisme promo musiman (Ramadan Sale)</b>, satu-satunya kelompok promo dengan volume besar DAN budget jelas (Rp1,5 miliar/tahun, konsisten 3 tahun) yang bisa dievaluasi lift-nya secara terpisah dari promo reguler. Data saat ini masih mencampur keduanya di analisis kategori di atas.</li>
+</ul>
+<p class="small"><b>Risiko.</b> Mekanisme minimum-belanja bisa menurunkan volume transaksi kecil yang sebelumnya tertarik promo murni karena harga rendah. Perlu A/B test terbatas sebelum rollout penuh, bukan perubahan kebijakan sekaligus semua kategori.<br>
+<b>Data yang bisa mengubah rekomendasi ini.</b> Data cost-per-acquisition per channel (di luar dataset ini) relevan di sini. Bila Marketplace secara signifikan lebih murah untuk akuisisi pelanggan baru dibanding Store/Website, trade-off margin-vs-akuisisi perlu dihitung ulang, bukan murni margin.</p>
+</div>
+
+<h2>Rekomendasi #2 - Program Perbaikan Kinerja Toko/Region</h2>
+<div class="reco">
+<ul>
+<li><b>Masukkan region Jawa Barat dan Sumatera ke program perbaikan kinerja prioritas</b>, karena kedua region konsisten di bawah target 2 tahun berturut-turut, dan kekurangannya merata di semua toko (bukan 1 toko buruk), sehingga intervensi di level region (bukan toko individual) lebih tepat sasaran. Toko spesifiknya adalah BDG-01, BDG-02 (Jawa Barat), MDN-01, dan PLM-01 (Sumatera).</li>
+<li><b>Evaluasi apakah angka target itu sendiri realistis</b> sebelum mengasumsikan eksekusi toko yang bermasalah. Jawa Barat sudah membaik signifikan dari 85,6%→95,8% tanpa program khusus, mengindikasikan kemungkinan target 2025 ditetapkan terlalu tinggi relatif kondisi awal, bukan murni soal eksekusi toko.</li>
+<li><b>Jangan masukkan TRN-99 ke evaluasi kinerja toko manapun</b> sampai asal-usulnya diklarifikasi Store Operations (lihat Temuan #5), karena risikonya salah menghukum/menghargai toko yang tidak benar-benar bertanggung jawab atas transaksi tersebut.</li>
+</ul>
+<p class="small"><b>Risiko.</b> Kondisi ekonomi regional, kepadatan kompetitor, dan faktor lokal lain yang tidak ada di dataset ini bisa jadi penyebab utama, bukan eksekusi toko. Program perbaikan sebaiknya diawali riset lapangan singkat sebelum investasi besar.<br>
+<b>Data yang bisa mengubah rekomendasi ini.</b> Data kompetitor lokal, data demografi/daya beli regional, dan histori perubahan target per region (untuk memastikan target 2025 bukan kesalahan input) relevan di sini. Bila ada, perlu dicek dulu sebelum menetapkan program perbaikan toko secara formal.</p>
+</div>
+
+<p class="small" style="margin-top:4mm;">Evidence lengkap tiap angka di atas ada di <code>artifacts/task3/kpi_dictionary.md</code>, <code>model.vw_sales_metrics</code>/<code>vw_achievement_monthly</code>/<code>vw_returns_metrics</code>, dan tab "Storyline" di dashboard Metabase (<code>evidence/task5_insights/</code>).</p>
+
+</body>
+</html>

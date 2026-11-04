@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="KIRANA Dashboard Wireframe" id="kirana-dashboard-wireframe">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="goal" value="TUJUAN: Dashboard mendukung 2 keputusan Direktur Komersial --&#10;(1) realokasi anggaran promo antar-channel/kategori/mekanisme&#10;(2) penentuan toko/region yang masuk program perbaikan kinerja.&#10;PENGGUNA: Direktur Komersial (ringkas, strategis), Manajer Channel/Toko (drill-through operasional).&#10;Lihat artifacts/task1/decision_statement.md untuk detail keputusan." style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1320" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="filterbar" value="FILTER BAR (persisten di semua tab): Periode (bulan/tahun) | Channel | Region | Kategori Produk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="1320" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="freshness" value="Indikator kesegaran data: tanggal POS-sync terakhir per toko + status (pos_sync_log) -- merah bila ada toko belum sync &gt;1 hari" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="1060" y="145" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Tab bar -->
+        <mxCell id="tabbar" value="TAB 1: Executive Overview | TAB 2: Channel/Region/Store Performance | TAB 3: Margin &amp; Promotion Effectiveness | TAB 4: Returns &amp; Customers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="185" width="1320" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- TAB 1 content -->
+        <mxCell id="t1_title" value="TAB 1 -- EXECUTIVE OVERVIEW (untuk Direktur Komersial: ringkas, status, tren)" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="225" width="700" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_kpi1" value="KPI Card: Net Sales&#10;(vs periode lalu, warna hijau/merah)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_kpi2" value="KPI Card: Achievement vs Target %&#10;(hijau&gt;=100%, kuning 90-99%, merah&lt;90%)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="250" y="250" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_kpi3" value="KPI Card: Gross Margin %" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="460" y="250" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_kpi4" value="KPI Card: Contribution Margin %" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="670" y="250" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_trend" value="Line chart: Net Sales Aktual vs Target per bulan (12-18 bulan), per channel&#10;Click -&gt; drill ke Tab 2 (filter channel+bulan terpilih)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="500" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_bar" value="Bar chart: Achievement % per Channel (status warna)&#10;Click -&gt; drill ke Tab 2" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="330" width="310" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_incomplete" value="Penanda data tidak lengkap: list toko/periode dengan status sinkronisasi POS bermasalah / store_code tidak terdaftar (TRN-99)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="890" y="330" width="430" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- TAB 2 content -->
+        <mxCell id="t2_title" value="TAB 2 -- CHANNEL, REGION &amp; STORE PERFORMANCE (drill-through sampai level toko)" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="700" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_map" value="Table/bar: Net Sales + Achievement % per Region&#10;Click region -&gt; filter tabel toko di bawah" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="605" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_storetable" value="Tabel: per Toko -- Net Sales, Achievement %, Gross Margin %, Transaksi, is_registered flag (TRN-99 ditandai)&#10;Diurutkan, warna status, klik baris -&gt; drill ke detail transaksi toko" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="605" width="840" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- TAB 3 content -->
+        <mxCell id="t3_title" value="TAB 3 -- MARGIN &amp; PROMOTION EFFECTIVENESS" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="805" width="700" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_margin" value="Bar: Gross Margin % vs Contribution Margin % per Channel&#10;(menunjukkan dampak biaya channel)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="830" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_promo" value="Bar: AOV Promo vs Non-Promo per Kategori (Promo Lift)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="830" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_table" value="Tabel detail promo: promo_code, kategori, budget, discount%, lift%" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="920" y="830" width="400" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- TAB 4 content -->
+        <mxCell id="t4_title" value="TAB 4 -- RETURNS &amp; CUSTOMERS (PII member TIDAK ditampilkan -- hanya gender/kota/tier/join_channel agregat)" style="text;html=1;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="905" width="1320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t4_return" value="Return Rate per Channel + alasan retur (bar)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="930" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t4_active" value="Active Members + Repeat Rate per bulan (line)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="930" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t4_storyline" value="Halaman Storyline (Task 5): insight asertif + anotasi anomali" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="920" y="930" width="400" height="60" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

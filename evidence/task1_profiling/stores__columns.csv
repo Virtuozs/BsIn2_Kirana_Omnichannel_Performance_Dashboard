@@ -1,0 +1,10 @@
+column_name,total_rows,null_or_blank,null_pct,distinct_count,min_value,max_value
+city,18,0,0.0,16,Bandung,Tangerang
+open_date,18,0,0.0,18,2019-03-01,2025-01-15
+province,18,0,0.0,9,Bali,Sumatera Utara
+region,18,0,0.0,6,Bali & Nusa Tenggara,Sumatera
+selling_area_sqm,18,0,0.0,10,1000,800
+status,18,0,0.0,1,Active,Active
+store_code,18,0,0.0,18,BDG-01,YGY-01
+store_name,18,0,0.0,18,KIRANA Bandung Dago,KIRANA Yogyakarta
+store_type,18,0,0.0,3,Express,Regular
