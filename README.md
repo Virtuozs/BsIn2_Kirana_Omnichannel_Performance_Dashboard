@@ -94,3 +94,9 @@ docker compose up -d                 # starts Metabase (localhost:3000) + draw.i
 - **Governance**: PII (name/phone/email/birth date) is dropped at the staging layer and
   never reaches `model.*` or the dashboard; access design and Metabase permission graph in
   `artifacts/task6/evaluation_and_governance.html`.
+
+## Student Info
+
+- Name  : Taufiqurrahman
+- NIM   : 24130500005
+- Class : BsIn2
