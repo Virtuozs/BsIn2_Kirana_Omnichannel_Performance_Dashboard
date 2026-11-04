@@ -1,0 +1,607 @@
+sku,product_name,category,subcategory,brand,current_list_price,current_unit_cost,launch_date
+KR-BB-0001,Sprei Lelap Basic 001,Bedding & Bath,Sprei,Lelap,210900,108900,2021-09-26
+KR-BB-0002,Bed Cover Lelap Premium 002,Bedding & Bath,Bed Cover,Kirana Sleep,183900,93500,2021-08-30
+KR-BB-0003,Handuk Lelap Nordic 003,Bedding & Bath,Handuk,Lelap,272900,128600,2022-03-25
+KR-BB-0004,Bantal Kirana Sleep Pro 004,Bedding & Bath,Bantal,Lelap,99900,46500,2022-11-17
+KR-BB-0005,Sprei Soffia Plus 005,Bedding & Bath,Sprei,Soffia,147900,80000,2025-04-09
+KR-BB-0006,Bed Cover Soffia Pro 006,Bedding & Bath,Bed Cover,Soffia,305900,165600,2021-07-30
+KR-BB-0007,Handuk Kirana Sleep Premium 007,Bedding & Bath,Handuk,Lelap,283900,154900,2021-11-10
+KR-BB-0008,Bantal Soffia Nordic 008,Bedding & Bath,Bantal,Soffia,167900,89400,2023-07-07
+KR-BB-0009,Sprei Soffia Mini 009,Bedding & Bath,Sprei,Lelap,339900,176100,2024-05-08
+KR-BB-0010,Bed Cover Soffia Pro 010,Bedding & Bath,Bed Cover,Kirana Sleep,208900,98800,2025-02-15
+KR-BB-0011,Handuk Lelap Pro 011,Bedding & Bath,Handuk,Lelap,161900,81600,2023-05-26
+KR-BB-0012,Bantal Kirana Sleep Nordic 012,Bedding & Bath,Bantal,Soffia,210900,95900,2023-04-12
+KR-BB-0013,Sprei Lelap Pro 013,Bedding & Bath,Sprei,Soffia,170900,78700,2022-11-03
+KR-BB-0014,Bed Cover Kirana Sleep Premium 014,Bedding & Bath,Bed Cover,Kirana Sleep,272900,127800,2022-12-16
+KR-BB-0015,Handuk Lelap Nordic 015,Bedding & Bath,Handuk,Kirana Sleep,514900,268900,2022-01-21
+KR-BB-0016,Bantal Soffia Classic 016,Bedding & Bath,Bantal,Soffia,289900,156100,2022-06-05
+KR-BB-0017,Sprei Kirana Sleep Mini 017,Bedding & Bath,Sprei,Kirana Sleep,192900,100600,2021-08-19
+KR-BB-0018,Bed Cover Soffia Classic 018,Bedding & Bath,Bed Cover,Lelap,121900,63000,2022-05-22
+KR-BB-0019,Handuk Soffia Basic 019,Bedding & Bath,Handuk,Soffia,332900,158500,2021-09-30
+KR-BB-0020,Bantal Soffia Natura 020,Bedding & Bath,Bantal,Lelap,230900,117300,2021-10-25
+KR-BB-0021,Sprei Kirana Sleep Pro 021,Bedding & Bath,Sprei,Kirana Sleep,279900,144800,2021-10-24
+KR-BB-0022,Bed Cover Soffia Plus 022,Bedding & Bath,Bed Cover,Soffia,375900,198200,2022-04-27
+KR-BB-0023,Handuk Kirana Sleep Mini 023,Bedding & Bath,Handuk,Lelap,169900,80500,2023-03-29
+KR-BB-0024,Bantal Soffia Natura 024,Bedding & Bath,Bantal,Kirana Sleep,94900,46900,2023-10-16
+KR-BB-0025,Sprei Lelap Plus 025,Bedding & Bath,Sprei,Kirana Sleep,682900,308000,2021-11-12
+KR-BB-0026,Bed Cover Soffia Classic 026,Bedding & Bath,Bed Cover,Kirana Sleep,188900,102200,2022-09-17
+KR-BB-0027,Handuk Soffia Basic 027,Bedding & Bath,Handuk,Kirana Sleep,320900,171200,2023-11-06
+KR-BB-0028,Bantal Lelap Mini 028,Bedding & Bath,Bantal,Lelap,246900,120100,2023-10-05
+KR-BB-0029,Sprei Kirana Sleep Nordic 029,Bedding & Bath,Sprei,Lelap,124900,63800,2021-10-10
+KR-BB-0030,Bed Cover Soffia Premium 030,Bedding & Bath,Bed Cover,Kirana Sleep,150900,74000,2022-05-13
+KR-BB-0031,Handuk Kirana Sleep Classic 031,Bedding & Bath,Handuk,Kirana Sleep,135900,65700,2021-09-20
+KR-BB-0032,Bantal Lelap Mini 032,Bedding & Bath,Bantal,Lelap,175900,91200,2023-09-17
+KR-BB-0033,Sprei Kirana Sleep Premium 033,Bedding & Bath,Sprei,Kirana Sleep,573900,309500,2023-08-17
+KR-BB-0034,Bed Cover Kirana Sleep Nordic 034,Bedding & Bath,Bed Cover,Soffia,200900,101700,2023-07-17
+KR-BB-0035,Handuk Soffia Basic 035,Bedding & Bath,Handuk,Kirana Sleep,389900,191500,2023-10-06
+KR-BB-0036,Bantal Lelap Pro 036,Bedding & Bath,Bantal,Lelap,219900,100200,2024-06-14
+KR-BB-0037,Sprei Soffia Basic 037,Bedding & Bath,Sprei,Lelap,151900,80600,2022-10-03
+KR-BB-0038,Bed Cover Kirana Sleep Pro 038,Bedding & Bath,Bed Cover,Soffia,360900,174200,2022-12-31
+KR-BB-0039,Handuk Lelap Nordic 039,Bedding & Bath,Handuk,Lelap,162900,85600,2021-12-14
+KR-BB-0040,Bantal Lelap Classic 040,Bedding & Bath,Bantal,Soffia,208900,94700,2024-02-16
+KR-BB-0041,Sprei Kirana Sleep Pro 041,Bedding & Bath,Sprei,Kirana Sleep,89900,42700,2023-05-21
+KR-BB-0042,Bed Cover Kirana Sleep Nordic 042,Bedding & Bath,Bed Cover,Lelap,343900,183000,2023-10-16
+KR-BB-0043,Handuk Kirana Sleep Mini 043,Bedding & Bath,Handuk,Soffia,316900,168900,2025-04-10
+KR-BB-0044,Bantal Soffia Plus 044,Bedding & Bath,Bantal,Kirana Sleep,234900,117900,2023-05-30
+KR-BB-0045,Sprei Lelap Classic 045,Bedding & Bath,Sprei,Lelap,107900,51500,2023-11-10
+KR-BB-0046,Bed Cover Kirana Sleep Pro 046,Bedding & Bath,Bed Cover,Lelap,131900,69800,2025-02-17
+KR-BB-0047,Handuk Kirana Sleep Plus 047,Bedding & Bath,Handuk,Lelap,478900,226700,2023-02-09
+KR-BB-0048,Bantal Kirana Sleep Premium 048,Bedding & Bath,Bantal,Kirana Sleep,273900,143100,2023-04-29
+KR-BB-0049,Sprei Kirana Sleep Classic 049,Bedding & Bath,Sprei,Soffia,215900,100200,2022-03-31
+KR-BB-0050,Bed Cover Soffia Natura 050,Bedding & Bath,Bed Cover,Kirana Sleep,122900,63900,2024-01-03
+KR-BB-0051,Handuk Soffia Pro 051,Bedding & Bath,Handuk,Lelap,114900,58200,2023-03-16
+KR-BB-0052,Bantal Soffia Mini 052,Bedding & Bath,Bantal,Soffia,166900,85700,2025-03-13
+KR-BB-0053,Sprei Lelap Classic 053,Bedding & Bath,Sprei,Soffia,157900,75600,2023-02-10
+KR-BB-0054,Bed Cover Kirana Sleep Nordic 054,Bedding & Bath,Bed Cover,Lelap,353900,188000,2022-02-27
+KR-BB-0055,Handuk Kirana Sleep Basic 055,Bedding & Bath,Handuk,Kirana Sleep,407900,213600,2022-10-21
+KR-BB-0056,Bantal Kirana Sleep Mini 056,Bedding & Bath,Bantal,Lelap,323900,157800,2025-05-27
+KR-BB-0057,Sprei Soffia Nordic 057,Bedding & Bath,Sprei,Lelap,121900,58700,2025-05-05
+KR-BB-0058,Bed Cover Kirana Sleep Plus 058,Bedding & Bath,Bed Cover,Soffia,392900,210200,2022-02-15
+KR-BB-0059,Handuk Kirana Sleep Premium 059,Bedding & Bath,Handuk,Lelap,374900,202700,2023-02-26
+KR-BB-0060,Bantal Soffia Classic 060,Bedding & Bath,Bantal,Kirana Sleep,325900,155500,2021-09-15
+KR-BB-0061,Sprei Kirana Sleep Basic 061,Bedding & Bath,Sprei,Kirana Sleep,145900,76300,2023-03-13
+KR-BB-0062,Bed Cover Lelap Plus 062,Bedding & Bath,Bed Cover,Lelap,107900,54900,2023-07-22
+KR-BB-0063,Handuk Kirana Sleep Pro 063,Bedding & Bath,Handuk,Lelap,250900,122900,2025-03-09
+KR-BB-0064,Bantal Soffia Natura 064,Bedding & Bath,Bantal,Soffia,128900,59900,2021-07-18
+KR-BB-0065,Sprei Kirana Sleep Basic 065,Bedding & Bath,Sprei,Soffia,148900,74500,2024-06-22
+KR-BB-0066,Bed Cover Kirana Sleep Premium 066,Bedding & Bath,Bed Cover,Kirana Sleep,203900,100400,2022-06-01
+KR-BB-0067,Handuk Kirana Sleep Nordic 067,Bedding & Bath,Handuk,Soffia,190900,101200,2022-06-08
+KR-BB-0068,Bantal Kirana Sleep Classic 068,Bedding & Bath,Bantal,Kirana Sleep,203900,94300,2022-07-20
+KR-BB-0069,Sprei Soffia Basic 069,Bedding & Bath,Sprei,Soffia,179900,84700,2023-04-09
+KR-BB-0070,Bed Cover Kirana Sleep Natura 070,Bedding & Bath,Bed Cover,Kirana Sleep,213900,102400,2023-06-15
+KR-BB-0071,Handuk Soffia Plus 071,Bedding & Bath,Handuk,Soffia,199900,107700,2023-03-10
+KR-BB-0072,Bantal Kirana Sleep Plus 072,Bedding & Bath,Bantal,Kirana Sleep,184900,90300,2022-12-07
+KR-BB-0073,Sprei Lelap Pro 073,Bedding & Bath,Sprei,Kirana Sleep,183900,92600,2024-06-28
+KR-BB-0074,Bed Cover Lelap Nordic 074,Bedding & Bath,Bed Cover,Lelap,163900,82600,2024-03-13
+KR-BB-0075,Handuk Kirana Sleep Basic 075,Bedding & Bath,Handuk,Lelap,257900,137500,2023-08-31
+KR-BB-0076,Bantal Kirana Sleep Natura 076,Bedding & Bath,Bantal,Kirana Sleep,122900,60800,2022-07-23
+KR-BB-0077,Sprei Kirana Sleep Natura 077,Bedding & Bath,Sprei,Lelap,267900,125200,2023-04-11
+KR-BB-0078,Bed Cover Lelap Pro 078,Bedding & Bath,Bed Cover,Kirana Sleep,214900,98500,2022-11-25
+KR-BB-0079,Handuk Soffia Nordic 079,Bedding & Bath,Handuk,Lelap,232900,105400,2021-12-30
+KR-BB-0080,Bantal Soffia Nordic 080,Bedding & Bath,Bantal,Kirana Sleep,297900,135500,2024-02-14
+KR-BP-0001,Skincare Glowa Classic 001,Beauty & Personal Care,Skincare,Aurora,78900,45100,2024-04-08
+KR-BP-0001,Skincare Glowa Classic 001 (old),Beauty & Personal Care,Skincare,Aurora,78900,45100,2024-04-08
+KR-BP-0002,Body Care Glowa Classic 002,Beauty & Personal Care,Body Care,Kirana Care,93900,48300,2022-01-19
+KR-BP-0003,Hair Care Aurora Natura 003,Beauty & Personal Care,Hair Care,Aurora,76900,40300,2022-11-15
+KR-BP-0004,Parfum Glowa Classic 004,Beauty & Personal Care,Parfum,Aurora,71900,37700,2022-02-12
+KR-BP-0005,Skincare Kirana Care Premium 005,Beauty & Personal Care,Skincare,Glowa,142900,85300,2024-04-26
+KR-BP-0006,Body Care Kirana Care Plus 006,Beauty & Personal Care,Body Care,Kirana Care,136900,72500,2022-07-07
+KR-BP-0007,Hair Care Aurora Basic 007,Beauty & Personal Care,Hair Care,Kirana Care,40900,23200,2023-10-07
+KR-BP-0008,Parfum Glowa Premium 008,Beauty & Personal Care,Parfum,Aurora,86900,46400,2023-08-13
+KR-BP-0009,Skincare Aurora Premium 009,Beauty & Personal Care,Skincare,Aurora,116900,68800,2025-01-12
+KR-BP-0010,Body Care Glowa Mini 010,Beauty & Personal Care,Body Care,Glowa,57900,31200,2022-09-05
+KR-BP-0011,Hair Care Aurora Mini 011,Beauty & Personal Care,Hair Care,Glowa,88900,49800,2025-06-18
+KR-BP-0012,Parfum Aurora Basic 012,Beauty & Personal Care,Parfum,Glowa,86900,44800,2022-06-11
+KR-BP-0013,Skincare Glowa Pro 013,Beauty & Personal Care,Skincare,Aurora,73900,43400,2022-11-25
+KR-BP-0014,Body Care Aurora Premium 014,Beauty & Personal Care,Body Care,Glowa,59900,30500,2022-02-18
+KR-BP-0015,Hair Care Kirana Care Pro 015,Beauty & Personal Care,Hair Care,Glowa,73900,41000,2024-11-18
+KR-BP-0016,Parfum Glowa Premium 016,Beauty & Personal Care,Parfum,Glowa,167900,89500,2023-04-17
+KR-BP-0017,Skincare Aurora Nordic 017,Beauty & Personal Care,Skincare,Glowa,87900,48200,2023-03-20
+KR-BP-0018,Body Care Aurora Premium 018,Beauty & Personal Care,Body Care,Kirana Care,39900,23400,2024-06-20
+KR-BP-0019,Hair Care Aurora Classic 019,Beauty & Personal Care,Hair Care,Kirana Care,78900,46300,2021-12-19
+KR-BP-0020,Parfum Aurora Mini 020,Beauty & Personal Care,Parfum,Aurora,54900,29000,2023-04-19
+KR-BP-0021,Skincare Aurora Nordic 021,Beauty & Personal Care,Skincare,Aurora,93900,47300,2023-04-11
+KR-BP-0022,Body Care Aurora Nordic 022,Beauty & Personal Care,Body Care,Kirana Care,77900,44100,2022-07-02
+KR-BP-0023,Hair Care Aurora Pro 023,Beauty & Personal Care,Hair Care,Aurora,65900,37100,2022-03-12
+KR-BP-0024,Parfum Glowa Premium 024,Beauty & Personal Care,Parfum,Glowa,74900,40800,2021-12-12
+KR-BP-0025,Skincare Aurora Basic 025,Beauty & Personal Care,Skincare,Glowa,138900,72600,2021-09-16
+KR-BP-0026,Body Care Glowa Nordic 026,Beauty & Personal Care,Body Care,Kirana Care,136900,80900,2021-12-03
+KR-BP-0027,Hair Care Kirana Care Mini 027,Beauty & Personal Care,Hair Care,Kirana Care,139900,79700,2021-08-29
+KR-BP-0028,Parfum Glowa Mini 028,Beauty & Personal Care,Parfum,Kirana Care,78900,39600,2021-09-11
+KR-BP-0029,Skincare Aurora Premium 029,Beauty & Personal Care,Skincare,Kirana Care,57900,30700,2023-01-24
+KR-BP-0030,Body Care Kirana Care Premium 030,Beauty & Personal Care,Body Care,Glowa,56900,30400,2021-10-18
+KR-BP-0031,Hair Care Glowa Natura 031,Beauty & Personal Care,Hair Care,Aurora,96900,48700,2022-09-02
+KR-BP-0032,Parfum Kirana Care Natura 032,Beauty & Personal Care,Parfum,Kirana Care,114900,67100,2022-12-09
+KR-BP-0033,Skincare Glowa Pro 033,Beauty & Personal Care,Skincare,Kirana Care,96900,56100,2023-08-01
+KR-BP-0034,Body Care Glowa Pro 034,Beauty & Personal Care,Body Care,Kirana Care,249900,133200,2022-08-26
+KR-BP-0035,Hair Care Aurora Pro 035,Beauty & Personal Care,Hair Care,Kirana Care,116900,59000,2023-04-03
+KR-BP-0036,Parfum Kirana Care Classic 036,Beauty & Personal Care,Parfum,Aurora,79900,47700,2025-03-14
+KR-BP-0037,Skincare Aurora Pro 037,Beauty & Personal Care,Skincare,Aurora,31900,17600,2023-02-12
+KR-BP-0038,Body Care Glowa Basic 038,Beauty & Personal Care,Body Care,Aurora,92900,48800,2021-09-16
+KR-BP-0039,Hair Care Kirana Care Nordic 039,Beauty & Personal Care,Hair Care,Glowa,39900,21400,2022-12-14
+KR-BP-0040,Parfum Glowa Mini 040,Beauty & Personal Care,Parfum,Kirana Care,108900,62100,2023-11-20
+KR-BP-0041,Skincare Kirana Care Basic 041,Beauty & Personal Care,Skincare,Kirana Care,85900,49000,2024-04-25
+KR-BP-0042,Body Care Glowa Mini 042,Beauty & Personal Care,Body Care,Kirana Care,189900,98500,2022-09-23
+KR-BP-0043,Hair Care Kirana Care Plus 043,Beauty & Personal Care,Hair Care,Glowa,83900,43500,2023-07-12
+KR-BP-0044,Parfum Glowa Basic 044,Beauty & Personal Care,Parfum,Glowa,131900,75500,2021-11-28
+KR-BP-0045,Skincare Glowa Pro 045,Beauty & Personal Care,Skincare,Glowa,46900,25800,2021-12-31
+KR-BP-0046,Body Care Glowa Pro 046,Beauty & Personal Care,Body Care,Glowa,106900,64200,2022-04-12
+KR-BP-0047,Hair Care Glowa Natura 047,Beauty & Personal Care,Hair Care,Kirana Care,72900,43400,2021-12-10
+KR-BP-0048,Parfum Aurora Classic 048,Beauty & Personal Care,Parfum,Kirana Care,109900,61000,2021-09-06
+KR-BP-0049,Skincare Kirana Care Mini 049,Beauty & Personal Care,Skincare,Glowa,76900,44000,2022-05-08
+KR-BP-0050,Body Care Glowa Classic 050,Beauty & Personal Care,Body Care,Aurora,112900,61400,2023-08-05
+KR-BP-0051,Hair Care Aurora Premium 051,Beauty & Personal Care,Hair Care,Glowa,117900,62400,2022-03-13
+KR-BP-0052,Parfum Aurora Pro 052,Beauty & Personal Care,Parfum,Kirana Care,159900,89100,2022-11-02
+KR-BP-0053,Skincare Kirana Care Natura 053,Beauty & Personal Care,Skincare,Kirana Care,60900,34400,2024-10-01
+KR-BP-0054,Body Care Glowa Mini 054,Beauty & Personal Care,Body Care,Glowa,52900,30000,2022-05-14
+KR-BP-0055,Hair Care Aurora Premium 055,Beauty & Personal Care,Hair Care,Glowa,37900,20900,2023-11-02
+KR-BP-0056,Parfum Aurora Classic 056,Beauty & Personal Care,Parfum,Aurora,170900,96200,2021-10-02
+KR-BP-0057,Skincare Glowa Plus 057,Beauty & Personal Care,Skincare,Kirana Care,75900,43000,2023-06-24
+KR-BP-0058,Body Care Kirana Care Classic 058,Beauty & Personal Care,Body Care,Glowa,132900,76900,2023-05-27
+KR-BP-0059,Hair Care Glowa Basic 059,Beauty & Personal Care,Hair Care,Kirana Care,67900,38000,2023-01-12
+KR-BP-0060,Parfum Aurora Premium 060,Beauty & Personal Care,Parfum,Aurora,56900,32400,2022-11-15
+KR-BP-0061,Skincare Kirana Care Natura 061,Beauty & Personal Care,Skincare,Glowa,57900,29400,2023-05-28
+KR-BP-0062,Body Care Aurora Nordic 062,Beauty & Personal Care,Body Care,Glowa,78900,45700,2021-08-08
+KR-BP-0063,Hair Care Aurora Classic 063,Beauty & Personal Care,Hair Care,Glowa,61900,34100,2021-12-20
+KR-BP-0064,Parfum Kirana Care Pro 064,Beauty & Personal Care,Parfum,Kirana Care,116900,59600,2022-03-22
+KR-BP-0065,Skincare Kirana Care Pro 065,Beauty & Personal Care,Skincare,Kirana Care,102900,53900,2021-12-28
+KR-BP-0066,Body Care Aurora Pro 066,Beauty & Personal Care,Body Care,Kirana Care,63900,35100,2022-12-09
+KR-BP-0067,Hair Care Aurora Plus 067,Beauty & Personal Care,Hair Care,Glowa,80900,48400,2022-06-28
+KR-BP-0068,Parfum Kirana Care Plus 068,Beauty & Personal Care,Parfum,Kirana Care,92900,56100,2022-11-22
+KR-BP-0069,Skincare Kirana Care Natura 069,Beauty & Personal Care,Skincare,Aurora,66900,39800,2021-12-19
+KR-BP-0070,Body Care Aurora Natura 070,Beauty & Personal Care,Body Care,Aurora,62900,36100,2023-08-30
+KR-EL-0001,Air Fryer Miyara Basic 001,Elektronik Rumah Tangga,Air Fryer,Voltra,289900,233900,2022-05-08
+KR-EL-0002,Blender Miyara Classic 002,Elektronik Rumah Tangga,Blender,Homeplus,648900,599000,2022-05-31
+KR-EL-0003,Rice Cooker Homeplus Nordic 003,Elektronik Rumah Tangga,Rice Cooker,Miyara,473900,400300,2021-08-15
+KR-EL-0004,Vacuum Cleaner Homeplus Plus 004,Elektronik Rumah Tangga,Vacuum Cleaner,Miyara,513900,470700,2021-12-01
+KR-EL-0005,Kipas Angin Voltra Classic 005,Elektronik Rumah Tangga,Kipas Angin,Voltra,421900,352100,2022-01-09
+KR-EL-0006,Air Fryer Homeplus Nordic 006,Elektronik Rumah Tangga,Air Fryer,Homeplus,382900,302300,2021-12-13
+KR-EL-0007,Blender Voltra Pro 007,Elektronik Rumah Tangga,Blender,Voltra,215900,193900,2022-01-16
+KR-EL-0008,Rice Cooker Voltra Classic 008,Elektronik Rumah Tangga,Rice Cooker,Voltra,641900,526500,2021-09-26
+KR-EL-0009,Vacuum Cleaner Miyara Natura 009,Elektronik Rumah Tangga,Vacuum Cleaner,Voltra,324900,261100,2023-02-17
+KR-EL-0010,Kipas Angin Homeplus Plus 010,Elektronik Rumah Tangga,Kipas Angin,Miyara,181900,144900,2023-10-11
+KR-EL-0011,Air Fryer Homeplus Natura 011,Elektronik Rumah Tangga,Air Fryer,Miyara,295900,275500,2021-08-30
+KR-EL-0012,Blender Voltra Plus 012,Elektronik Rumah Tangga,Blender,Miyara,361900,315600,2022-07-10
+KR-EL-0013,Rice Cooker Voltra Natura 013,Elektronik Rumah Tangga,Rice Cooker,Voltra,978900,823600,2022-02-28
+KR-EL-0014,Vacuum Cleaner Miyara Premium 014,Elektronik Rumah Tangga,Vacuum Cleaner,Miyara,260900,202700,2023-04-28
+KR-EL-0015,Kipas Angin Homeplus Premium 015,Elektronik Rumah Tangga,Kipas Angin,Homeplus,1119900,935200,2024-06-29
+KR-EL-0016,Air Fryer Miyara Plus 016,Elektronik Rumah Tangga,Air Fryer,Homeplus,131900,102300,2021-07-25
+KR-EL-0017,Blender Miyara Nordic 017,Elektronik Rumah Tangga,Blender,Miyara,268900,247200,2025-10-21
+KR-EL-0018,Rice Cooker Homeplus Premium 018,Elektronik Rumah Tangga,Rice Cooker,Voltra,382900,337700,2022-11-30
+KR-EL-0019,Vacuum Cleaner Homeplus Premium 019,Elektronik Rumah Tangga,Vacuum Cleaner,Voltra,421900,353200,2021-09-04
+KR-EL-0020,Kipas Angin Miyara Mini 020,Elektronik Rumah Tangga,Kipas Angin,Miyara,1620900,1470300,2023-01-12
+KR-EL-0021,Air Fryer Voltra Nordic 021,Elektronik Rumah Tangga,Air Fryer,Miyara,474900,411300,2025-10-01
+KR-EL-0022,Blender Miyara Mini 022,Elektronik Rumah Tangga,Blender,Miyara,619900,503600,2023-06-06
+KR-EL-0023,Rice Cooker Miyara Natura 023,Elektronik Rumah Tangga,Rice Cooker,Voltra,554900,513900,2024-12-06
+KR-EL-0024,Vacuum Cleaner Voltra Nordic 024,Elektronik Rumah Tangga,Vacuum Cleaner,Miyara,513900,454100,2022-02-07
+KR-EL-0025,Kipas Angin Miyara Nordic 025,Elektronik Rumah Tangga,Kipas Angin,Homeplus,517900,403000,2025-02-01
+KR-EL-0026,Air Fryer Homeplus Premium 026,Elektronik Rumah Tangga,Air Fryer,Voltra,584900,531600,2025-04-02
+KR-EL-0027,Blender Miyara Natura 027,Elektronik Rumah Tangga,Blender,Miyara,262900,222200,2023-11-19
+KR-EL-0028,Rice Cooker Voltra Nordic 028,Elektronik Rumah Tangga,Rice Cooker,Homeplus,765900,711000,2022-06-02
+KR-EL-0029,Vacuum Cleaner Miyara Plus 029,Elektronik Rumah Tangga,Vacuum Cleaner,Miyara,494900,399800,2023-08-28
+KR-EL-0030,Kipas Angin Homeplus Plus 030,Elektronik Rumah Tangga,Kipas Angin,Voltra,433900,398200,2021-07-29
+KR-EL-0031,Air Fryer Voltra Plus 031,Elektronik Rumah Tangga,Air Fryer,Homeplus,908900,789800,2025-06-19
+KR-EL-0031,Air Fryer Voltra Plus 031 (old),Elektronik Rumah Tangga,Air Fryer,Homeplus,908900,789800,2025-06-19
+KR-EL-0032,Blender Voltra Natura 032,Elektronik Rumah Tangga,Blender,Voltra,403900,352200,2023-10-08
+KR-EL-0033,Rice Cooker Voltra Premium 033,Elektronik Rumah Tangga,Rice Cooker,Voltra,472900,426100,2021-11-17
+KR-EL-0034,Vacuum Cleaner Miyara Nordic 034,Elektronik Rumah Tangga,Vacuum Cleaner,Homeplus,489900,451000,2022-04-02
+KR-EL-0035,Kipas Angin Voltra Nordic 035,Elektronik Rumah Tangga,Kipas Angin,Miyara,631900,509900,2021-11-29
+KR-EL-0036,Air Fryer Homeplus Classic 036,Elektronik Rumah Tangga,Air Fryer,Homeplus,277900,257400,2022-07-03
+KR-EL-0037,Blender Voltra Classic 037,Elektronik Rumah Tangga,Blender,Miyara,518900,476200,2022-09-10
+KR-EL-0038,Rice Cooker Voltra Plus 038,Elektronik Rumah Tangga,Rice Cooker,Homeplus,778900,696800,2021-12-01
+KR-EL-0039,Vacuum Cleaner Homeplus Plus 039,Elektronik Rumah Tangga,Vacuum Cleaner,Miyara,758900,634000,2023-01-01
+KR-EL-0040,Kipas Angin Homeplus Plus 040,Elektronik Rumah Tangga,Kipas Angin,Miyara,912900,766400,2022-04-24
+KR-EL-0041,Air Fryer Miyara Classic 041,Elektronik Rumah Tangga,Air Fryer,Homeplus,367900,305700,2023-08-23
+KR-EL-0042,Blender Homeplus Pro 042,Elektronik Rumah Tangga,Blender,Homeplus,791900,609900,2022-02-26
+KR-EL-0043,Rice Cooker Voltra Mini 043,Elektronik Rumah Tangga,Rice Cooker,Voltra,369900,327900,2022-07-01
+KR-EL-0044,Vacuum Cleaner Voltra Natura 044,Elektronik Rumah Tangga,Vacuum Cleaner,Miyara,528900,422200,2023-03-24
+KR-EL-0045,Kipas Angin Voltra Classic 045,Elektronik Rumah Tangga,Kipas Angin,Homeplus,264900,232700,2022-11-01
+KR-EL-0046,Air Fryer Homeplus Natura 046,Elektronik Rumah Tangga,Air Fryer,Miyara,235900,199900,2022-09-01
+KR-EL-0046,Air Fryer Homeplus Natura 046 (old),Elektronik Rumah Tangga,Air Fryer,Miyara,235900,199900,2022-09-01
+KR-EL-0047,Blender Voltra Natura 047,Elektronik Rumah Tangga,Blender,Homeplus,996900,815300,2023-04-14
+KR-EL-0048,Rice Cooker Miyara Nordic 048,Elektronik Rumah Tangga,Rice Cooker,Voltra,383900,311500,2022-02-26
+KR-EL-0049,Vacuum Cleaner Voltra Plus 049,Elektronik Rumah Tangga,Vacuum Cleaner,Homeplus,413900,335800,2022-05-19
+KR-EL-0050,Kipas Angin Homeplus Mini 050,Elektronik Rumah Tangga,Kipas Angin,Voltra,665900,548800,2022-02-28
+KR-EL-0051,Air Fryer Miyara Premium 051,Elektronik Rumah Tangga,Air Fryer,Homeplus,245900,208400,2023-08-16
+KR-EL-0052,Blender Voltra Mini 052,Elektronik Rumah Tangga,Blender,Miyara,605900,465500,2023-09-16
+KR-EL-0053,Rice Cooker Miyara Nordic 053,Elektronik Rumah Tangga,Rice Cooker,Voltra,410900,342300,2025-11-24
+KR-EL-0054,Vacuum Cleaner Miyara Basic 054,Elektronik Rumah Tangga,Vacuum Cleaner,Voltra,243900,199800,2022-05-04
+KR-EL-0055,Kipas Angin Miyara Mini 055,Elektronik Rumah Tangga,Kipas Angin,Homeplus,181900,160700,2022-07-30
+KR-EL-0056,Air Fryer Voltra Premium 056,Elektronik Rumah Tangga,Air Fryer,Voltra,981900,877600,2021-09-02
+KR-EL-0057,Blender Voltra Premium 057,Elektronik Rumah Tangga,Blender,Miyara,227900,190500,2021-08-02
+KR-EL-0058,Rice Cooker Voltra Classic 058,Elektronik Rumah Tangga,Rice Cooker,Miyara,529900,493600,2022-07-19
+KR-EL-0059,Vacuum Cleaner Voltra Plus 059,Elektronik Rumah Tangga,Vacuum Cleaner,Voltra,1225900,974800,2023-08-15
+KR-EL-0060,Kipas Angin Miyara Plus 060,Elektronik Rumah Tangga,Kipas Angin,Homeplus,204900,168400,2025-03-04
+KR-FA-0001,Atasan Wanita Urbano Nordic 001,Fashion,Atasan Wanita,Kirana Wear,321900,157900,2022-09-18
+KR-FA-0002,Kemeja Pria Lunaria Plus 002,Fashion,Kemeja Pria,Kirana Wear,124900,52500,2022-05-10
+KR-FA-0003,Homewear Kirana Wear Classic 003,Fashion,Homewear,Lunaria,168900,71200,2022-03-09
+KR-FA-0004,Tas Lunaria Natura 004,Fashion,Tas,Urbano,102900,45100,2022-01-30
+KR-FA-0005,Atasan Wanita Kirana Wear Pro 005,Fashion,Atasan Wanita,Kirana Wear,123900,52300,2022-10-06
+KR-FA-0006,Kemeja Pria Lunaria Mini 006,Fashion,Kemeja Pria,Kirana Wear,130900,54300,2023-06-01
+KR-FA-0007,Homewear Lunaria Natura 007,Fashion,Homewear,Kirana Wear,192900,90500,2023-08-18
+KR-FA-0008,Tas Lunaria Premium 008 (old),Fashion,Tas,Kirana Wear,152900,65500,2024-07-30
+KR-FA-0008,Tas Lunaria Premium 008,Fashion,Tas,Kirana Wear,152900,65500,2024-07-30
+KR-FA-0009,Atasan Wanita Kirana Wear Premium 009,Fashion,Atasan Wanita,Urbano,112900,55300,2023-05-12
+KR-FA-0010,Kemeja Pria Lunaria Plus 010,Fashion,Kemeja Pria,Urbano,190900,81800,2022-08-28
+KR-FA-0011,Homewear Lunaria Mini 011,Fashion,Homewear,Lunaria,244900,118200,2021-11-23
+KR-FA-0012,Tas Lunaria Pro 012,Fashion,Tas,Urbano,112900,49900,2022-10-22
+KR-FA-0013,Atasan Wanita Kirana Wear Premium 013,Fashion,Atasan Wanita,Kirana Wear,121900,54900,2023-08-29
+KR-FA-0014,Kemeja Pria Lunaria Pro 014,Fashion,Kemeja Pria,Kirana Wear,270900,122800,2023-08-18
+KR-FA-0015,Homewear Lunaria Nordic 015,Fashion,Homewear,Urbano,207900,89500,2023-02-03
+KR-FA-0016,Tas Lunaria Basic 016,Fashion,Tas,Urbano,286900,126100,2022-10-05
+KR-FA-0017,Atasan Wanita Lunaria Plus 017,Fashion,Atasan Wanita,Kirana Wear,199900,95700,2021-09-02
+KR-FA-0018,Kemeja Pria Lunaria Pro 018,Fashion,Kemeja Pria,Kirana Wear,177900,76100,2023-01-31
+KR-FA-0019,Homewear Lunaria Pro 019,Fashion,Homewear,Kirana Wear,285900,134200,2023-05-04
+KR-FA-0020,Tas Lunaria Natura 020,Fashion,Tas,Lunaria,90900,45400,2022-05-08
+KR-FA-0021,Atasan Wanita Kirana Wear Nordic 021,Fashion,Atasan Wanita,Kirana Wear,194900,91700,2023-08-18
+KR-FA-0022,Kemeja Pria Lunaria Plus 022,Fashion,Kemeja Pria,Lunaria,210900,92700,2023-04-24
+KR-FA-0023,Homewear Kirana Wear Plus 023,Fashion,Homewear,Kirana Wear,87900,39000,2021-08-28
+KR-FA-0024,Tas Kirana Wear Plus 024,Fashion,Tas,Urbano,271900,113000,2024-04-18
+KR-FA-0025,Atasan Wanita Urbano Plus 025,Fashion,Atasan Wanita,Lunaria,154900,73200,2022-01-15
+KR-FA-0026,Kemeja Pria Kirana Wear Natura 026,Fashion,Kemeja Pria,Urbano,259900,125600,2021-11-25
+KR-FA-0027,Homewear Lunaria Pro 027,Fashion,Homewear,Kirana Wear,308900,155900,2023-10-03
+KR-FA-0028,Tas Kirana Wear Classic 028,Fashion,Tas,Urbano,131900,64700,2023-01-08
+KR-FA-0029,Atasan Wanita Urbano Classic 029,Fashion,Atasan Wanita,Lunaria,118900,58100,2024-06-06
+KR-FA-0030,Kemeja Pria Kirana Wear Natura 030,Fashion,Kemeja Pria,Lunaria,158900,74500,2023-08-06
+KR-FA-0031,Homewear Lunaria Basic 031,Fashion,Homewear,Urbano,244900,115900,2022-01-15
+KR-FA-0032,Tas Kirana Wear Mini 032,Fashion,Tas,Kirana Wear,204900,100300,2023-07-12
+KR-FA-0033,Atasan Wanita Kirana Wear Plus 033,Fashion,Atasan Wanita,Urbano,177900,79000,2023-09-12
+KR-FA-0034,Kemeja Pria Lunaria Plus 034,Fashion,Kemeja Pria,Urbano,155900,70900,2023-01-29
+KR-FA-0035,Homewear Lunaria Basic 035,Fashion,Homewear,Lunaria,142900,70700,2024-01-22
+KR-FA-0036,Tas Lunaria Nordic 036,Fashion,Tas,Lunaria,112900,51100,2023-04-08
+KR-FA-0037,Atasan Wanita Urbano Nordic 037,Fashion,Atasan Wanita,Kirana Wear,184900,87600,2021-12-04
+KR-FA-0038,Kemeja Pria Kirana Wear Pro 038,Fashion,Kemeja Pria,Kirana Wear,109900,48800,2023-11-02
+KR-FA-0039,Homewear Kirana Wear Basic 039,Fashion,Homewear,Lunaria,86900,39200,2022-06-07
+KR-FA-0040,Tas Lunaria Premium 040,Fashion,Tas,Lunaria,161900,80800,2024-01-27
+KR-FA-0041,Atasan Wanita Kirana Wear Premium 041,Fashion,Atasan Wanita,Urbano,176900,89000,2023-02-02
+KR-FA-0042,Kemeja Pria Kirana Wear Classic 042,Fashion,Kemeja Pria,Lunaria,64900,31400,2022-11-17
+KR-FA-0043,Homewear Urbano Nordic 043,Fashion,Homewear,Urbano,254900,113200,2021-12-09
+KR-FA-0044,Tas Lunaria Nordic 044,Fashion,Tas,Kirana Wear,360900,150400,2023-07-05
+KR-FA-0045,Atasan Wanita Urbano Premium 045,Fashion,Atasan Wanita,Kirana Wear,211900,88600,2025-09-15
+KR-FA-0046,Kemeja Pria Kirana Wear Basic 046,Fashion,Kemeja Pria,Lunaria,277900,136700,2023-03-24
+KR-FA-0047,Homewear Urbano Natura 047,Fashion,Homewear,Urbano,118900,58300,2023-04-01
+KR-FA-0048,Tas Lunaria Natura 048,Fashion,Tas,Urbano,67900,30300,2022-04-01
+KR-FA-0049,Atasan Wanita Urbano Premium 049,Fashion,Atasan Wanita,Urbano,113900,53700,2022-07-01
+KR-FA-0050,Kemeja Pria Lunaria Plus 050,Fashion,Kemeja Pria,Lunaria,163900,79400,2021-08-03
+KR-FA-0051,Homewear Urbano Classic 051,Fashion,Homewear,Lunaria,87900,43200,2024-07-23
+KR-FA-0052,Tas Lunaria Classic 052,Fashion,Tas,Urbano,326900,146400,2023-03-26
+KR-FA-0053,Atasan Wanita Kirana Wear Basic 053,Fashion,Atasan Wanita,Kirana Wear,118900,49500,2025-10-19
+KR-FA-0054,Kemeja Pria Lunaria Pro 054,Fashion,Kemeja Pria,Kirana Wear,221900,110500,2022-02-26
+KR-FA-0055,Homewear Kirana Wear Premium 055,Fashion,Homewear,Urbano,139900,62900,2023-02-13
+KR-FA-0056,Tas Lunaria Premium 056,Fashion,Tas,Urbano,35900,18100,2023-02-17
+KR-FA-0057,Atasan Wanita Urbano Plus 057,Fashion,Atasan Wanita,Kirana Wear,196900,92200,2023-07-09
+KR-FA-0058,Kemeja Pria Urbano Mini 058,Fashion,Kemeja Pria,Kirana Wear,225900,100700,2023-04-24
+KR-FA-0059,Homewear Urbano Mini 059,Fashion,Homewear,Kirana Wear,317900,151800,2022-10-17
+KR-FA-0060,Tas Lunaria Classic 060,Fashion,Tas,Urbano,98900,42700,2021-07-17
+KR-FA-0061,Atasan Wanita Kirana Wear Basic 061,Fashion,Atasan Wanita,Lunaria,175900,74300,2023-11-23
+KR-FA-0062,Kemeja Pria Urbano Pro 062,Fashion,Kemeja Pria,Urbano,195900,82800,2022-05-08
+KR-FA-0063,Homewear Urbano Mini 063,Fashion,Homewear,Kirana Wear,162900,75700,2022-11-26
+KR-FA-0064,Tas Urbano Premium 064,Fashion,Tas,Lunaria,66900,32700,2024-03-03
+KR-FA-0065,Atasan Wanita Kirana Wear Plus 065,Fashion,Atasan Wanita,Kirana Wear,99900,43200,2025-07-05
+KR-FA-0066,Kemeja Pria Urbano Basic 066,Fashion,Kemeja Pria,Kirana Wear,232900,104000,2021-11-17
+KR-FA-0067,Homewear Urbano Plus 067,Fashion,Homewear,Urbano,271900,122800,2022-06-18
+KR-FA-0068,Tas Lunaria Pro 068,Fashion,Tas,Lunaria,99900,50500,2025-04-26
+KR-FA-0069,Atasan Wanita Kirana Wear Classic 069,Fashion,Atasan Wanita,Urbano,195900,85900,2021-10-25
+KR-FA-0070,Kemeja Pria Urbano Mini 070,Fashion,Kemeja Pria,Kirana Wear,160900,72400,2021-11-09
+KR-FA-0071,Homewear Urbano Plus 071,Fashion,Homewear,Kirana Wear,71900,35700,2022-02-12
+KR-FA-0072,Tas Kirana Wear Plus 072,Fashion,Tas,Lunaria,327900,154600,2022-10-21
+KR-FA-0073,Atasan Wanita Kirana Wear Nordic 073,Fashion,Atasan Wanita,Kirana Wear,91900,44000,2021-12-27
+KR-FA-0074,Kemeja Pria Lunaria Natura 074,Fashion,Kemeja Pria,Kirana Wear,335900,144700,2022-10-30
+KR-FA-0075,Homewear Kirana Wear Pro 075,Fashion,Homewear,Urbano,505900,210700,2023-03-01
+KR-FA-0076,Tas Urbano Pro 076,Fashion,Tas,Urbano,136900,67100,2022-06-24
+KR-FA-0077,Atasan Wanita Lunaria Natura 077,Fashion,Atasan Wanita,Kirana Wear,99900,43700,2023-03-27
+KR-FA-0078,Kemeja Pria Kirana Wear Pro 078,Fashion,Kemeja Pria,Lunaria,116900,50900,2023-09-29
+KR-FA-0079,Homewear Kirana Wear Nordic 079,Fashion,Homewear,Kirana Wear,171900,75400,2022-08-25
+KR-FA-0080,Tas Lunaria Basic 080,Fashion,Tas,Kirana Wear,44900,20300,2022-12-02
+KR-FA-0081,Atasan Wanita Urbano Premium 081,Fashion,Atasan Wanita,Kirana Wear,162900,80400,2024-07-27
+KR-FA-0082,Kemeja Pria Urbano Plus 082,Fashion,Kemeja Pria,Kirana Wear,229900,97100,2024-08-13
+KR-FA-0083,Homewear Kirana Wear Pro 083,Fashion,Homewear,Kirana Wear,99900,48500,2022-01-27
+KR-FA-0084,Tas Urbano Nordic 084,Fashion,Tas,Lunaria,121900,52400,2023-01-20
+KR-FA-0085,Atasan Wanita Kirana Wear Premium 085,Fashion,Atasan Wanita,Urbano,198900,99600,2023-11-28
+KR-FA-0086,Kemeja Pria Lunaria Premium 086,Fashion,Kemeja Pria,Kirana Wear,135900,65200,2023-05-28
+KR-FA-0087,Homewear Lunaria Premium 087,Fashion,Homewear,Lunaria,95900,41700,2022-03-08
+KR-FA-0088,Tas Lunaria Pro 088,Fashion,Tas,Lunaria,153900,69900,2021-09-01
+KR-FA-0089,Atasan Wanita Kirana Wear Mini 089,Fashion,Atasan Wanita,Kirana Wear,69900,31600,2021-08-18
+KR-FA-0090,Kemeja Pria Kirana Wear Premium 090,Fashion,Kemeja Pria,Urbano,78900,39200,2022-08-04
+KR-FA-0091,Homewear Urbano Mini 091,Fashion,Homewear,Kirana Wear,153900,72200,2024-04-18
+KR-FA-0092,Tas Kirana Wear Pro 092,Fashion,Tas,Kirana Wear,222900,102900,2022-08-20
+KR-FA-0093,Atasan Wanita Lunaria Mini 093,Fashion,Atasan Wanita,Kirana Wear,94900,47600,2022-08-02
+KR-FA-0094,Kemeja Pria Lunaria Nordic 094,Fashion,Kemeja Pria,Kirana Wear,139900,64000,2023-03-08
+KR-FA-0095,Homewear Lunaria Natura 095,Fashion,Homewear,Lunaria,108900,51700,2025-11-12
+KR-FA-0096,Tas Urbano Premium 096,Fashion,Tas,Urbano,113900,50300,2021-11-07
+KR-FA-0097,Atasan Wanita Kirana Wear Premium 097,Fashion,Atasan Wanita,Urbano,120900,55800,2021-07-31
+KR-FA-0098,Kemeja Pria Lunaria Classic 098,Fashion,Kemeja Pria,Urbano,204900,89800,2022-03-24
+KR-FA-0099,Homewear Kirana Wear Plus 099,Fashion,Homewear,Urbano,226900,95600,2023-02-09
+KR-FA-0100,Tas Lunaria Natura 100,Fashion,Tas,Lunaria,65900,30300,2022-06-29
+KR-FA-0101,Atasan Wanita Lunaria Nordic 101,Fashion,Atasan Wanita,Lunaria,81900,40800,2024-07-22
+KR-FA-0102,Kemeja Pria Kirana Wear Pro 102,Fashion,Kemeja Pria,Urbano,112900,57100,2022-05-28
+KR-FA-0103,Homewear Urbano Pro 103,Fashion,Homewear,Lunaria,275900,124000,2023-01-08
+KR-FA-0104,Tas Kirana Wear Natura 104,Fashion,Tas,Urbano,67900,29300,2022-07-18
+KR-FA-0105,Atasan Wanita Kirana Wear Natura 105,Fashion,Atasan Wanita,Urbano,282900,128300,2022-05-17
+KR-FA-0106,Kemeja Pria Kirana Wear Natura 106,Fashion,Kemeja Pria,Lunaria,59900,27900,2022-07-05
+KR-FA-0107,Homewear Urbano Basic 107,Fashion,Homewear,Kirana Wear,166900,82900,2022-01-13
+KR-FA-0108,Tas Urbano Premium 108,Fashion,Tas,Urbano,233900,98100,2023-04-22
+KR-FA-0109,Atasan Wanita Lunaria Classic 109,Fashion,Atasan Wanita,Urbano,118900,56200,2023-05-24
+KR-FA-0110,Kemeja Pria Lunaria Mini 110,Fashion,Kemeja Pria,Urbano,93900,42100,2025-05-18
+KR-HD-0001,Vas & Tanaman Artifisial Kirana Living Natura 001,Home Decor,Vas & Tanaman Artifisial,Ruangku,160900,79000,2021-09-16
+KR-HD-0002,Bingkai & Wall Art Ruangku Basic 002,Home Decor,Bingkai & Wall Art,Artisane,93900,41100,2023-11-24
+KR-HD-0003,Lampu Hias Kirana Living Mini 003,Home Decor,Lampu Hias,Ruangku,121900,57900,2022-09-28
+KR-HD-0004,Lilin Aroma Artisane Classic 004,Home Decor,Lilin Aroma,Ruangku,133900,61500,2024-11-03
+KR-HD-0005,Vas & Tanaman Artifisial Artisane Pro 005,Home Decor,Vas & Tanaman Artifisial,Ruangku,110900,52400,2022-11-26
+KR-HD-0006,Bingkai & Wall Art Artisane Plus 006,Home Décor,Bingkai & Wall Art,Artisane,156900,69000,2022-03-25
+KR-HD-0007,Lampu Hias Kirana Living Premium 007,Home Decor,Lampu Hias,Artisane,85900,37900,2023-04-29
+KR-HD-0008,Lilin Aroma Kirana Living Plus 008,Home Decor,Lilin Aroma,Artisane,172900,70300,2025-11-17
+KR-HD-0009,Vas & Tanaman Artifisial Artisane Classic 009,Home Decor,Vas & Tanaman Artifisial,Artisane,188900,88500,2022-05-04
+KR-HD-0010,Bingkai & Wall Art Artisane Basic 010,Home Decor,Bingkai & Wall Art,Kirana Living,219900,104000,2021-07-20
+KR-HD-0011,Lampu Hias Ruangku Basic 011,Home Decor,Lampu Hias,Kirana Living,268900,121600,2022-08-31
+KR-HD-0012,Lilin Aroma Ruangku Classic 012,Home Decor,Lilin Aroma,Artisane,143900,67000,2024-07-20
+KR-HD-0013,Vas & Tanaman Artifisial Ruangku Basic 013,Home Decor,Vas & Tanaman Artifisial,Kirana Living,256900,106100,2022-03-13
+KR-HD-0014,Bingkai & Wall Art Kirana Living Basic 014,Home Decor,Bingkai & Wall Art,Artisane,123900,59800,2022-09-05
+KR-HD-0015,Lampu Hias Kirana Living Natura 015,Home Decor,Lampu Hias,Artisane,99900,41200,2023-09-29
+KR-HD-0016,Lilin Aroma Artisane Classic 016,Home Decor,Lilin Aroma,Ruangku,180900,88400,2021-10-16
+KR-HD-0017,Vas & Tanaman Artifisial Ruangku Classic 017,Home Decor,Vas & Tanaman Artifisial,Ruangku,284900,139500,2023-05-07
+KR-HD-0018,Bingkai & Wall Art Artisane Mini 018,Home Decor,Bingkai & Wall Art,Kirana Living,205900,92400,2022-06-24
+KR-HD-0019,Lampu Hias Ruangku Nordic 019,Home Decor,Lampu Hias,Artisane,47900,23600,2022-02-04
+KR-HD-0020,Lilin Aroma Ruangku Mini 020,Home Decor,Lilin Aroma,Artisane,121900,58100,2023-03-27
+KR-HD-0021,Vas & Tanaman Artifisial Ruangku Natura 021,Home Decor,Vas & Tanaman Artifisial,Ruangku,156900,70600,2023-10-10
+KR-HD-0022,Bingkai & Wall Art Artisane Basic 022,Home Decor,Bingkai & Wall Art,Ruangku,168900,72700,2023-05-02
+KR-HD-0023,Lampu Hias Ruangku Premium 023,Home Decor,Lampu Hias,Artisane,223900,99400,2023-06-25
+KR-HD-0024,Lilin Aroma Artisane Nordic 024,Home Decor,Lilin Aroma,Artisane,143900,69100,2024-08-07
+KR-HD-0025,Vas & Tanaman Artifisial Kirana Living Mini 025,Home Decor,Vas & Tanaman Artifisial,Ruangku,178900,85400,2022-01-25
+KR-HD-0026,Bingkai & Wall Art Artisane Pro 026,Home Decor,Bingkai & Wall Art,Kirana Living,318900,150900,2023-06-25
+KR-HD-0027,Lampu Hias Ruangku Plus 027,Home Decor,Lampu Hias,Ruangku,225900,98000,2025-09-12
+KR-HD-0028,Lilin Aroma Kirana Living Nordic 028,Home Decor,Lilin Aroma,Artisane,161900,66500,2024-02-08
+KR-HD-0029,Vas & Tanaman Artifisial Ruangku Mini 029,Home Decor,Vas & Tanaman Artifisial,Ruangku,162900,72700,2022-07-10
+KR-HD-0030,Bingkai & Wall Art Artisane Basic 030,Home Decor,Bingkai & Wall Art,Kirana Living,221900,97700,2022-10-09
+KR-HD-0031,Lampu Hias Artisane Basic 031,Home Decor,Lampu Hias,Ruangku,89900,38900,2022-11-23
+KR-HD-0032,Lilin Aroma Artisane Nordic 032,Home Decor,Lilin Aroma,Kirana Living,163900,72000,2023-02-08
+KR-HD-0033,Vas & Tanaman Artifisial Ruangku Basic 033,Home Decor,Vas & Tanaman Artifisial,Kirana Living,113900,47400,2022-02-21
+KR-HD-0034,Bingkai & Wall Art Ruangku Premium 034,Home Decor,Bingkai & Wall Art,Artisane,153900,70900,2022-01-22
+KR-HD-0035,Lampu Hias Ruangku Classic 035,Home Decor,Lampu Hias,Artisane,138900,65800,2023-11-20
+KR-HD-0036,Lilin Aroma Artisane Pro 036,Home Decor,Lilin Aroma,Kirana Living,233900,111100,2021-11-12
+KR-HD-0037,Vas & Tanaman Artifisial Ruangku Mini 037,Home Decor,Vas & Tanaman Artifisial,Artisane,111900,50800,2022-03-17
+KR-HD-0037,Vas & Tanaman Artifisial Ruangku Mini 037 (old),Home Decor,Vas & Tanaman Artifisial,Artisane,111900,50800,2022-03-17
+KR-HD-0038,Bingkai & Wall Art Artisane Plus 038,Home Decor,Bingkai & Wall Art,Ruangku,169900,81000,2025-06-07
+KR-HD-0039,Lampu Hias Artisane Classic 039,Home Decor,Lampu Hias,Ruangku,169900,83400,2022-05-31
+KR-HD-0040,Lilin Aroma Artisane Nordic 040,Home Decor,Lilin Aroma,Kirana Living,78900,38400,2023-09-22
+KR-HD-0041,Vas & Tanaman Artifisial Kirana Living Pro 041,Home Decor,Vas & Tanaman Artifisial,Artisane,181900,80000,2022-01-14
+KR-HD-0042,Bingkai & Wall Art Artisane Natura 042,Home Decor,Bingkai & Wall Art,Kirana Living,157900,75100,2022-07-06
+KR-HD-0043,Lampu Hias Artisane Classic 043,Home Décor,Lampu Hias,Artisane,199900,93200,2022-07-02
+KR-HD-0044,Lilin Aroma Ruangku Mini 044,Home Décor,Lilin Aroma,Kirana Living,224900,105300,2023-03-10
+KR-HD-0045,Vas & Tanaman Artifisial Artisane Natura 045,Home Decor,Vas & Tanaman Artifisial,Ruangku,327900,154400,2022-09-28
+KR-HD-0046,Bingkai & Wall Art Artisane Basic 046,Home Decor,Bingkai & Wall Art,Kirana Living,197900,80400,2022-04-12
+KR-HD-0047,Lampu Hias Kirana Living Plus 047,Home Decor,Lampu Hias,Artisane,79900,34300,2021-08-25
+KR-HD-0048,Lilin Aroma Ruangku Pro 048,Home Decor,Lilin Aroma,Ruangku,157900,65200,2022-12-03
+KR-HD-0049,Vas & Tanaman Artifisial Kirana Living Classic 049,Home Decor,Vas & Tanaman Artifisial,Ruangku,524900,234000,2022-02-13
+KR-HD-0050,Bingkai & Wall Art Artisane Mini 050,Home Decor,Bingkai & Wall Art,Ruangku,120900,50700,2024-12-26
+KR-HD-0051,Lampu Hias Artisane Plus 051,Home Decor,Lampu Hias,Ruangku,126900,51600,2021-12-21
+KR-HD-0052,Lilin Aroma Kirana Living Plus 052,Home Decor,Lilin Aroma,Artisane,100900,46800,2024-07-29
+KR-HD-0053,Vas & Tanaman Artifisial Kirana Living Classic 053,Home Decor,Vas & Tanaman Artifisial,Artisane,145900,69600,2023-04-23
+KR-HD-0054,Bingkai & Wall Art Ruangku Natura 054,Home Décor,Bingkai & Wall Art,Kirana Living,234900,114700,2023-03-15
+KR-HD-0055,Lampu Hias Ruangku Nordic 055,Home Decor,Lampu Hias,Artisane,193900,82600,2021-12-21
+KR-HD-0056,Lilin Aroma Kirana Living Pro 056,Home Decor,Lilin Aroma,Kirana Living,149900,68500,2022-04-01
+KR-HD-0057,Vas & Tanaman Artifisial Kirana Living Classic 057,Home Decor,Vas & Tanaman Artifisial,Artisane,90900,36900,2021-12-15
+KR-HD-0058,Bingkai & Wall Art Artisane Premium 058,Home Decor,Bingkai & Wall Art,Artisane,170900,77400,2022-12-25
+KR-HD-0059,Lampu Hias Artisane Natura 059,Home Decor,Lampu Hias,Artisane,81900,39400,2022-12-18
+KR-HD-0060,Lilin Aroma Kirana Living Basic 060,Home Decor,Lilin Aroma,Kirana Living,462900,188700,2025-03-21
+KR-HD-0061,Vas & Tanaman Artifisial Ruangku Mini 061,Home Decor,Vas & Tanaman Artifisial,Ruangku,200900,93400,2023-10-16
+KR-HD-0062,Bingkai & Wall Art Kirana Living Nordic 062,Home Decor,Bingkai & Wall Art,Artisane,167900,72300,2025-04-05
+KR-HD-0063,Lampu Hias Artisane Premium 063,Home Decor,Lampu Hias,Artisane,213900,95500,2021-10-26
+KR-HD-0064,Lilin Aroma Artisane Natura 064,Home Decor,Lilin Aroma,Kirana Living,96900,42300,2024-02-08
+KR-HD-0065,Vas & Tanaman Artifisial Ruangku Natura 065,Home Decor,Vas & Tanaman Artifisial,Ruangku,127900,59700,2022-05-03
+KR-HD-0066,Bingkai & Wall Art Artisane Premium 066,Home Decor,Bingkai & Wall Art,Ruangku,341900,163300,2022-04-03
+KR-HD-0067,Lampu Hias Kirana Living Classic 067,Home Decor,Lampu Hias,Ruangku,112900,51800,2023-09-11
+KR-HD-0068,Lilin Aroma Artisane Mini 068,Home Décor,Lilin Aroma,Artisane,107900,44700,2023-01-27
+KR-HD-0069,Vas & Tanaman Artifisial Kirana Living Nordic 069,Home Decor,Vas & Tanaman Artifisial,Kirana Living,258900,114900,2021-08-06
+KR-HD-0070,Bingkai & Wall Art Ruangku Pro 070,Home Decor,Bingkai & Wall Art,Artisane,129900,56100,2023-02-12
+KR-HD-0071,Lampu Hias Ruangku Mini 071,Home Decor,Lampu Hias,Kirana Living,265900,114700,2023-01-09
+KR-HD-0072,Lilin Aroma Kirana Living Pro 072,Home Décor,Lilin Aroma,Ruangku,103900,42600,2021-12-19
+KR-HD-0073,Vas & Tanaman Artifisial Artisane Plus 073,Home Décor,Vas & Tanaman Artifisial,Kirana Living,317900,147100,2022-02-07
+KR-HD-0074,Bingkai & Wall Art Kirana Living Pro 074,Home Decor,Bingkai & Wall Art,Artisane,238900,115700,2021-10-29
+KR-HD-0075,Lampu Hias Ruangku Classic 075,Home Decor,Lampu Hias,Artisane,94900,42100,2023-07-22
+KR-HD-0076,Lilin Aroma Kirana Living Mini 076,Home Decor,Lilin Aroma,Kirana Living,251900,106700,2021-09-21
+KR-HD-0077,Vas & Tanaman Artifisial Artisane Pro 077,Home Decor,Vas & Tanaman Artifisial,Ruangku,106900,48000,2025-04-08
+KR-HD-0078,Bingkai & Wall Art Artisane Natura 078,Home Decor,Bingkai & Wall Art,Ruangku,104900,42800,2021-07-30
+KR-HD-0079,Lampu Hias Kirana Living Natura 079,Home Decor,Lampu Hias,Kirana Living,215900,104600,2024-07-06
+KR-HD-0080,Lilin Aroma Artisane Classic 080,Home Decor,Lilin Aroma,Ruangku,100900,44500,2022-10-27
+KR-HD-0081,Vas & Tanaman Artifisial Artisane Premium 081,Home Decor,Vas & Tanaman Artifisial,Artisane,274900,135600,2022-04-03
+KR-HD-0082,Bingkai & Wall Art Ruangku Plus 082,Home Decor,Bingkai & Wall Art,Artisane,124900,55700,2023-11-11
+KR-HD-0083,Lampu Hias Kirana Living Basic 083,Home Decor,Lampu Hias,Kirana Living,136900,67000,2023-07-08
+KR-HD-0084,Lilin Aroma Ruangku Natura 084,Home Decor,Lilin Aroma,Kirana Living,103900,48000,2022-08-29
+KR-HD-0085,Vas & Tanaman Artifisial Kirana Living Basic 085,Home Decor,Vas & Tanaman Artifisial,Kirana Living,225900,102400,2022-01-18
+KR-HD-0086,Bingkai & Wall Art Artisane Premium 086,Home Décor,Bingkai & Wall Art,Ruangku,177900,80400,2022-12-16
+KR-HD-0087,Lampu Hias Kirana Living Mini 087,Home Decor,Lampu Hias,Ruangku,161900,71100,2023-01-14
+KR-HD-0088,Lilin Aroma Artisane Pro 088,Home Decor,Lilin Aroma,Kirana Living,185900,80300,2023-01-04
+KR-HD-0089,Vas & Tanaman Artifisial Ruangku Natura 089,Home Décor,Vas & Tanaman Artifisial,Kirana Living,142900,66400,2021-08-11
+KR-HD-0090,Bingkai & Wall Art Artisane Pro 090,Home Decor,Bingkai & Wall Art,Artisane,190900,89000,2024-08-06
+KR-HD-0091,Lampu Hias Kirana Living Basic 091,Home Decor,Lampu Hias,Artisane,208900,89700,2023-10-10
+KR-HD-0092,Lilin Aroma Kirana Living Plus 092,Home Decor,Lilin Aroma,Ruangku,162900,78200,2023-02-19
+KR-HD-0093,Vas & Tanaman Artifisial Ruangku Nordic 093,Home Decor,Vas & Tanaman Artifisial,Artisane,178900,74600,2022-03-14
+KR-HD-0094,Bingkai & Wall Art Artisane Nordic 094,Home Decor,Bingkai & Wall Art,Artisane,94900,45100,2023-07-06
+KR-HD-0095,Lampu Hias Kirana Living Mini 095,Home Decor,Lampu Hias,Kirana Living,166900,76400,2022-11-10
+KR-HD-0096,Lilin Aroma Ruangku Basic 096,Home Decor,Lilin Aroma,Kirana Living,161900,78600,2021-09-28
+KR-HD-0097,Vas & Tanaman Artifisial Artisane Premium 097,Home Decor,Vas & Tanaman Artifisial,Ruangku,467900,197400,2025-01-27
+KR-HD-0098,Bingkai & Wall Art Artisane Plus 098,Home Decor,Bingkai & Wall Art,Kirana Living,178900,78200,2022-09-11
+KR-HD-0099,Lampu Hias Artisane Nordic 099,Home Decor,Lampu Hias,Ruangku,285900,126500,2023-04-08
+KR-HD-0100,Lilin Aroma Ruangku Premium 100,Home Decor,Lilin Aroma,Kirana Living,276900,120000,2021-12-28
+KR-KD-0001,Peralatan Masak Dapura Basic 001,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,105900,53100,2022-10-22
+KR-KD-0002,Alat Makan Kirana Kitchen Mini 002,Kitchen & Dining,Alat Makan,Cookmate,131900,65300,2025-04-01
+KR-KD-0003,Wadah Makanan Cookmate Classic 003,Kitchen & Dining,Wadah Makanan,Dapura,147900,81100,2022-09-10
+KR-KD-0004,Gelas & Mug Kirana Kitchen Mini 004,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,143900,73000,2022-09-01
+KR-KD-0005,Peralatan Masak Dapura Premium 005,Kitchen & Dining,Peralatan Masak,Cookmate,203900,106800,2023-06-16
+KR-KD-0006,Alat Makan Cookmate Plus 006,Kitchen & Dining,Alat Makan,Cookmate,89900,47400,2022-01-08
+KR-KD-0007,Wadah Makanan Dapura Nordic 007,Kitchen & Dining,Wadah Makanan,Dapura,101900,50500,2021-10-10
+KR-KD-0008,Gelas & Mug Cookmate Nordic 008,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,166900,85800,2023-05-18
+KR-KD-0009,Peralatan Masak Dapura Nordic 009,Kitchen & Dining,Peralatan Masak,Cookmate,405900,203800,2022-06-10
+KR-KD-0010,Alat Makan Cookmate Mini 010,Kitchen & Dining,Alat Makan,Kirana Kitchen,219900,111600,2022-07-18
+KR-KD-0011,Wadah Makanan Kirana Kitchen Pro 011,kitchen & dining,Wadah Makanan,Cookmate,172900,82000,2024-12-15
+KR-KD-0012,Gelas & Mug Dapura Pro 012,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,95900,47800,2022-03-07
+KR-KD-0013,Peralatan Masak Cookmate Plus 013,Kitchen & Dining,Peralatan Masak,Dapura,170900,90300,2021-10-21
+KR-KD-0014,Alat Makan Kirana Kitchen Plus 014,kitchen & dining,Alat Makan,Kirana Kitchen,116900,62600,2023-04-01
+KR-KD-0015,Wadah Makanan Dapura Plus 015,Kitchen & Dining,Wadah Makanan,Cookmate,140900,73800,2022-10-01
+KR-KD-0016,Gelas & Mug Kirana Kitchen Basic 016,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,187900,102300,2021-09-04
+KR-KD-0017,Peralatan Masak Cookmate Plus 017,Kitchen & Dining,Peralatan Masak,Cookmate,206900,108600,2023-05-14
+KR-KD-0018,Alat Makan Dapura Premium 018,Kitchen & Dining,Alat Makan,Kirana Kitchen,379900,178800,2022-02-04
+KR-KD-0019,Wadah Makanan Kirana Kitchen Classic 019,Kitchen & Dining,Wadah Makanan,Cookmate,149900,74800,2022-05-11
+KR-KD-0020,Gelas & Mug Kirana Kitchen Nordic 020,Kitchen & Dining,Gelas & Mug,Dapura,191900,99900,2023-09-20
+KR-KD-0021,Peralatan Masak Cookmate Pro 021,Kitchen & Dining,Peralatan Masak,Cookmate,114900,57300,2023-01-28
+KR-KD-0022,Alat Makan Cookmate Basic 022,Kitchen & Dining,Alat Makan,Kirana Kitchen,186900,97300,2024-11-27
+KR-KD-0023,Wadah Makanan Cookmate Classic 023,Kitchen & Dining,Wadah Makanan,Dapura,283900,150900,2023-05-29
+KR-KD-0024,Gelas & Mug Cookmate Natura 024,Kitchen & Dining,Gelas & Mug,Cookmate,91900,46700,2022-06-25
+KR-KD-0025,Peralatan Masak Kirana Kitchen Classic 025,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,340900,171100,2023-08-26
+KR-KD-0026,Alat Makan Kirana Kitchen Classic 026,Kitchen & Dining,Alat Makan,Dapura,167900,82000,2022-07-11
+KR-KD-0027,Wadah Makanan Dapura Premium 027,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,165900,89800,2023-06-26
+KR-KD-0028,Gelas & Mug Cookmate Basic 028,Kitchen & Dining,Gelas & Mug,Dapura,79900,37300,2024-09-12
+KR-KD-0029,Peralatan Masak Dapura Basic 029,Kitchen & Dining,Peralatan Masak,Cookmate,565900,281800,2023-06-05
+KR-KD-0030,Alat Makan Kirana Kitchen Mini 030,Kitchen & Dining,Alat Makan,Dapura,212900,102400,2021-11-20
+KR-KD-0031,Wadah Makanan Cookmate Premium 031,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,273900,154600,2021-11-23
+KR-KD-0032,Gelas & Mug Kirana Kitchen Premium 032,Kitchen & Dining,Gelas & Mug,Cookmate,360900,179300,2022-05-05
+KR-KD-0033,Peralatan Masak Dapura Natura 033,Kitchen & Dining,Peralatan Masak,Cookmate,250900,129200,2025-03-25
+KR-KD-0034,Alat Makan Dapura Mini 034,kitchen & dining,Alat Makan,Cookmate,128900,68500,2022-01-28
+KR-KD-0035,Wadah Makanan Cookmate Natura 035,Kitchen & Dining,Wadah Makanan,Dapura,170900,83000,2024-02-24
+KR-KD-0036,Gelas & Mug Kirana Kitchen Pro 036,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,161900,75300,2022-12-05
+KR-KD-0037,Peralatan Masak Dapura Mini 037,Kitchen & Dining,Peralatan Masak,Dapura,170900,86800,2023-07-01
+KR-KD-0038,Alat Makan Dapura Nordic 038,Kitchen & Dining,Alat Makan,Cookmate,122900,64200,2024-08-05
+KR-KD-0039,Wadah Makanan Kirana Kitchen Classic 039,Kitchen & Dining,Wadah Makanan,Dapura,155900,86400,2023-06-09
+KR-KD-0040,Gelas & Mug Kirana Kitchen Pro 040,Kitchen & Dining,Gelas & Mug,Dapura,76900,38400,2022-04-21
+KR-KD-0041,Peralatan Masak Cookmate Basic 041,Kitchen & Dining,Peralatan Masak,Cookmate,108900,52100,2022-10-07
+KR-KD-0042,Alat Makan Kirana Kitchen Premium 042,Kitchen & Dining,Alat Makan,Cookmate,302900,171600,2023-05-12
+KR-KD-0043,Wadah Makanan Dapura Plus 043,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,188900,94400,2025-06-01
+KR-KD-0044,Gelas & Mug Cookmate Mini 044,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,91900,47000,2022-09-18
+KR-KD-0045,Peralatan Masak Dapura Premium 045,Kitchen & Dining,Peralatan Masak,Cookmate,231900,128400,2023-11-18
+KR-KD-0046,Alat Makan Cookmate Mini 046,Kitchen & Dining,Alat Makan,Dapura,220900,112500,2022-03-01
+KR-KD-0047,Wadah Makanan Kirana Kitchen Plus 047,Kitchen & Dining,Wadah Makanan,Cookmate,68900,37400,2022-12-10
+KR-KD-0048,Gelas & Mug Cookmate Plus 048,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,85900,46400,2025-09-07
+KR-KD-0049,Peralatan Masak Dapura Nordic 049,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,187900,104700,2023-01-29
+KR-KD-0050,Alat Makan Kirana Kitchen Basic 050,Kitchen & Dining,Alat Makan,Kirana Kitchen,253900,131000,2023-08-14
+KR-KD-0051,Wadah Makanan Kirana Kitchen Pro 051,Kitchen & Dining,Wadah Makanan,Cookmate,235900,114100,2022-08-25
+KR-KD-0052,Gelas & Mug Dapura Classic 052,Kitchen & Dining,Gelas & Mug,Cookmate,172900,83500,2023-10-20
+KR-KD-0053,Peralatan Masak Cookmate Premium 053,Kitchen & Dining,Peralatan Masak,Dapura,171900,86800,2023-06-17
+KR-KD-0054,Alat Makan Cookmate Pro 054,Kitchen & Dining,Alat Makan,Dapura,94900,48000,2021-12-13
+KR-KD-0055,Wadah Makanan Kirana Kitchen Pro 055,Kitchen & Dining,Wadah Makanan,Dapura,67900,37900,2022-10-16
+KR-KD-0056,Gelas & Mug Dapura Natura 056,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,146900,78800,2022-04-18
+KR-KD-0057,Peralatan Masak Cookmate Plus 057,Kitchen & Dining,Peralatan Masak,Cookmate,115900,64800,2025-10-17
+KR-KD-0058,Alat Makan Cookmate Mini 058,Kitchen & Dining,Alat Makan,Kirana Kitchen,136900,71200,2022-08-29
+KR-KD-0059,Wadah Makanan Kirana Kitchen Mini 059,Kitchen & Dining,Wadah Makanan,Cookmate,186900,88100,2022-03-09
+KR-KD-0060,Gelas & Mug Kirana Kitchen Basic 060,Kitchen & Dining,Gelas & Mug,Dapura,116900,57900,2022-10-22
+KR-KD-0061,Peralatan Masak Cookmate Mini 061,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,184900,103600,2022-01-21
+KR-KD-0062,Alat Makan Cookmate Nordic 062,Kitchen & Dining,Alat Makan,Kirana Kitchen,239900,120600,2023-06-01
+KR-KD-0063,Wadah Makanan Cookmate Plus 063,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,351900,195300,2023-07-30
+KR-KD-0064,Gelas & Mug Kirana Kitchen Premium 064,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,116900,60200,2022-09-01
+KR-KD-0065,Peralatan Masak Kirana Kitchen Basic 065,Kitchen & Dining,Peralatan Masak,Dapura,190900,100300,2021-09-14
+KR-KD-0066,Alat Makan Dapura Plus 066,Kitchen & Dining,Alat Makan,Kirana Kitchen,347900,184500,2023-01-06
+KR-KD-0067,Wadah Makanan Dapura Pro 067,Kitchen & Dining,Wadah Makanan,Dapura,227900,110700,2022-06-24
+KR-KD-0068,Gelas & Mug Kirana Kitchen Basic 068,Kitchen & Dining,Gelas & Mug,Dapura,172900,85900,2022-05-05
+KR-KD-0069,Peralatan Masak Kirana Kitchen Nordic 069,Kitchen & Dining,Peralatan Masak,Cookmate,57900,32100,2021-11-06
+KR-KD-0070,Alat Makan Cookmate Plus 070,Kitchen & Dining,Alat Makan,Cookmate,122900,57900,2022-07-31
+KR-KD-0071,Wadah Makanan Dapura Basic 071,Kitchen & Dining,Wadah Makanan,Cookmate,202900,99900,2022-01-03
+KR-KD-0072,Gelas & Mug Cookmate Premium 072,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,98900,51800,2021-10-27
+KR-KD-0073,Peralatan Masak Kirana Kitchen Basic 073,Kitchen & Dining,Peralatan Masak,Dapura,122900,66900,2023-07-29
+KR-KD-0074,Alat Makan Cookmate Natura 074,Kitchen & Dining,Alat Makan,Dapura,212900,116600,2022-10-18
+KR-KD-0075,Wadah Makanan Cookmate Mini 075,kitchen & dining,Wadah Makanan,Kirana Kitchen,92900,49100,2023-05-26
+KR-KD-0076,Gelas & Mug Kirana Kitchen Basic 076,Kitchen & Dining,Gelas & Mug,Cookmate,210900,104900,2022-05-06
+KR-KD-0077,Peralatan Masak Kirana Kitchen Mini 077,Kitchen & Dining,Peralatan Masak,Dapura,70900,39200,2023-09-11
+KR-KD-0078,Alat Makan Kirana Kitchen Mini 078,Kitchen & Dining,Alat Makan,Dapura,137900,70200,2023-08-08
+KR-KD-0079,Wadah Makanan Dapura Nordic 079,Kitchen & Dining,Wadah Makanan,Cookmate,158900,77200,2025-04-14
+KR-KD-0080,Gelas & Mug Cookmate Plus 080,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,72900,36000,2021-10-24
+KR-KD-0081,Peralatan Masak Kirana Kitchen Plus 081,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,182900,86000,2024-12-04
+KR-KD-0082,Alat Makan Cookmate Classic 082,Kitchen & Dining,Alat Makan,Dapura,52900,28100,2023-08-09
+KR-KD-0083,Wadah Makanan Cookmate Classic 083,Kitchen & Dining,Wadah Makanan,Cookmate,246900,129200,2022-01-11
+KR-KD-0084,Gelas & Mug Cookmate Pro 084,Kitchen & Dining,Gelas & Mug,Dapura,197900,110200,2023-04-15
+KR-KD-0085,Peralatan Masak Dapura Classic 085,Kitchen & Dining,Peralatan Masak,Dapura,179900,91600,2023-09-03
+KR-KD-0086,Alat Makan Cookmate Basic 086,Kitchen & Dining,Alat Makan,Kirana Kitchen,103900,54000,2024-05-30
+KR-KD-0087,Wadah Makanan Dapura Natura 087,Kitchen & Dining,Wadah Makanan,Cookmate,91900,49600,2024-03-21
+KR-KD-0088,Gelas & Mug Dapura Plus 088,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,90900,51200,2025-04-17
+KR-KD-0089,Peralatan Masak Cookmate Nordic 089,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,230900,111000,2025-09-02
+KR-KD-0090,Alat Makan Dapura Mini 090,Kitchen & Dining,Alat Makan,Kirana Kitchen,199900,107800,2023-08-27
+KR-KD-0091,Wadah Makanan Cookmate Nordic 091,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,230900,125100,2023-09-14
+KR-KD-0092,Gelas & Mug Dapura Nordic 092,Kitchen & Dining,Gelas & Mug,Cookmate,82900,46000,2021-11-15
+KR-KD-0093,Peralatan Masak Dapura Plus 093,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,66900,35300,2021-11-19
+KR-KD-0094,Alat Makan Cookmate Natura 094,Kitchen & Dining,Alat Makan,Kirana Kitchen,146900,71700,2023-01-27
+KR-KD-0095,Wadah Makanan Cookmate Mini 095,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,330900,176200,2025-04-17
+KR-KD-0096,Gelas & Mug Dapura Natura 096,Kitchen & Dining,Gelas & Mug,Cookmate,64900,32000,2022-07-09
+KR-KD-0097,Peralatan Masak Kirana Kitchen Natura 097,kitchen & dining,Peralatan Masak,Cookmate,107900,57600,2022-03-26
+KR-KD-0098,Alat Makan Dapura Plus 098,Kitchen & Dining,Alat Makan,Kirana Kitchen,189900,104900,2023-08-13
+KR-KD-0099,Wadah Makanan Cookmate Classic 099,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,250900,120400,2023-06-03
+KR-KD-0100,Gelas & Mug Cookmate Nordic 100,Kitchen & Dining,Gelas & Mug,Kirana Kitchen,160900,83200,2023-10-06
+KR-KD-0101,Peralatan Masak Cookmate Premium 101,Kitchen & Dining,Peralatan Masak,Kirana Kitchen,131900,73600,2022-09-16
+KR-KD-0102,Alat Makan Cookmate Plus 102,Kitchen & Dining,Alat Makan,Kirana Kitchen,168900,92400,2023-09-12
+KR-KD-0103,Wadah Makanan Dapura Pro 103,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,250900,123700,2022-01-09
+KR-KD-0104,Gelas & Mug Cookmate Nordic 104,Kitchen & Dining,Gelas & Mug,Dapura,228900,112800,2022-03-22
+KR-KD-0105,Peralatan Masak Kirana Kitchen Classic 105,Kitchen & Dining,Peralatan Masak,Dapura,71900,40000,2022-07-13
+KR-KD-0106,Alat Makan Cookmate Classic 106,Kitchen & Dining,Alat Makan,Dapura,178900,86400,2022-03-28
+KR-KD-0107,Wadah Makanan Kirana Kitchen Mini 107,Kitchen & Dining,Wadah Makanan,Kirana Kitchen,160900,78100,2023-10-09
+KR-KD-0108,Gelas & Mug Cookmate Nordic 108,Kitchen & Dining,Gelas & Mug,Cookmate,140900,77100,2024-03-31
+KR-KD-0109,Peralatan Masak Cookmate Premium 109,Kitchen & Dining,Peralatan Masak,Dapura,115900,65000,2024-06-08
+KR-KD-0110,Alat Makan Dapura Nordic 110,Kitchen & Dining,Alat Makan,Cookmate,161900,83800,2022-04-18
+KR-SO-0001,Box Penyimpanan Kirana Living Plus 001,Storage & Organizer,Box Penyimpanan,Rapi,57900,29500,2022-11-20
+KR-SO-0002,Rak Rapi Nordic 002,Storage & Organizer,Rak,Simpana,193900,99600,2021-10-07
+KR-SO-0003,Gantungan Rapi Classic 003,Storage & Organizer,Gantungan,Kirana Living,62900,28300,2024-01-03
+KR-SO-0004,Box Penyimpanan Rapi Pro 004,Storage & Organizer,Box Penyimpanan,Simpana,58900,28700,2023-08-06
+KR-SO-0005,Rak Kirana Living Pro 005,Storage & Organizer,Rak,Simpana,24900,11100,2023-05-12
+KR-SO-0006,Gantungan Rapi Classic 006,Storage & Organizer,Gantungan,Rapi,29900,14500,2022-01-13
+KR-SO-0007,Box Penyimpanan Kirana Living Natura 007,Storage & Organizer,Box Penyimpanan,Kirana Living,220900,101400,2024-10-18
+KR-SO-0008,Rak Simpana Plus 008,Storage & Organizer,Rak,Kirana Living,101900,46500,2022-07-04
+KR-SO-0009,Gantungan Simpana Natura 009,Storage & Organizer,Gantungan,Rapi,103900,48600,2021-09-05
+KR-SO-0010,Box Penyimpanan Rapi Pro 010,Storage & Organizer,Box Penyimpanan,Simpana,91900,48000,2023-07-16
+KR-SO-0011,Rak Rapi Pro 011,Storage & Organizer,Rak,Simpana,159900,72800,2025-07-14
+KR-SO-0012,Gantungan Simpana Classic 012,Storage & Organizer,Gantungan,Rapi,74900,35600,2023-03-12
+KR-SO-0013,Box Penyimpanan Kirana Living Plus 013,Storage & Organizer,Box Penyimpanan,Simpana,59900,28000,2023-02-02
+KR-SO-0014,Rak Kirana Living Nordic 014,Storage & Organizer,Rak,Rapi,74900,33300,2023-06-25
+KR-SO-0015,Gantungan Kirana Living Plus 015,Storage & Organizer,Gantungan,Rapi,160900,75600,2023-02-02
+KR-SO-0016,Box Penyimpanan Simpana Basic 016,Storage & Organizer,Box Penyimpanan,Simpana,118900,55500,2022-01-03
+KR-SO-0017,Rak Simpana Classic 017 (old),Storage & Organizer,Rak,Rapi,99900,48600,2023-08-03
+KR-SO-0017,Rak Simpana Classic 017,Storage & Organizer,Rak,Rapi,99900,48600,2023-08-03
+KR-SO-0018,Gantungan Kirana Living Plus 018,Storage & Organizer,Gantungan,Rapi,82900,38600,2022-01-01
+KR-SO-0019,Box Penyimpanan Kirana Living Classic 019,Storage & Organizer,Box Penyimpanan,Kirana Living,74900,39300,2023-10-02
+KR-SO-0020,Rak Kirana Living Basic 020,Storage & Organizer,Rak,Rapi,63900,33700,2022-03-12
+KR-SO-0021,Gantungan Kirana Living Nordic 021,Storage & Organizer,Gantungan,Simpana,56900,26000,2024-01-09
+KR-SO-0022,Box Penyimpanan Kirana Living Nordic 022,Storage & Organizer,Box Penyimpanan,Kirana Living,41900,20500,2023-11-26
+KR-SO-0023,Rak Kirana Living Mini 023,Storage & Organizer,Rak,Simpana,81900,35800,2023-05-01
+KR-SO-0024,Gantungan Simpana Pro 024,Storage & Organizer,Gantungan,Rapi,96900,49200,2024-09-26
+KR-SO-0025,Box Penyimpanan Simpana Nordic 025,Storage & Organizer,Box Penyimpanan,Rapi,217900,108000,2021-08-22
+KR-SO-0026,Rak Kirana Living Nordic 026,Storage & Organizer,Rak,Kirana Living,95900,45000,2022-03-25
+KR-SO-0027,Gantungan Kirana Living Basic 027,Storage & Organizer,Gantungan,Kirana Living,64900,32500,2024-01-02
+KR-SO-0028,Box Penyimpanan Rapi Nordic 028,Storage & Organizer,Box Penyimpanan,Kirana Living,85900,39700,2023-11-09
+KR-SO-0029,Rak Rapi Pro 029,Storage & Organizer,Rak,Kirana Living,77900,39100,2023-06-02
+KR-SO-0030,Gantungan Kirana Living Basic 030,Storage & Organizer,Gantungan,Rapi,84900,37100,2023-02-27
+KR-SO-0031,Box Penyimpanan Rapi Nordic 031,Storage & Organizer,Box Penyimpanan,Rapi,71900,33300,2022-11-01
+KR-SO-0032,Rak Kirana Living Basic 032,Storage & Organizer,Rak,Simpana,100900,45800,2023-06-30
+KR-SO-0033,Gantungan Rapi Nordic 033,Storage & Organizer,Gantungan,Simpana,112900,57900,2023-08-01
+KR-SO-0034,Box Penyimpanan Simpana Premium 034,Storage & Organizer,Box Penyimpanan,Simpana,127900,59800,2022-08-09
+KR-SO-0035,Rak Rapi Classic 035,Storage & Organizer,Rak,Rapi,76900,40400,2022-02-15
+KR-SO-0036,Gantungan Rapi Plus 036,Storage & Organizer,Gantungan,Rapi,94900,43300,2022-07-10
+KR-SO-0037,Box Penyimpanan Simpana Mini 037,Storage & Organizer,Box Penyimpanan,Rapi,109900,48600,2022-08-02
+KR-SO-0038,Rak Simpana Natura 038,Storage & Organizer,Rak,Kirana Living,106900,53500,2021-11-03
+KR-SO-0039,Gantungan Kirana Living Pro 039,Storage & Organizer,Gantungan,Rapi,44900,23700,2021-09-06
+KR-SO-0040,Box Penyimpanan Rapi Premium 040,Storage & Organizer,Box Penyimpanan,Kirana Living,109900,54700,2023-10-10
+KR-SO-0041,Rak Rapi Classic 041,Storage & Organizer,Rak,Simpana,133900,66100,2022-03-09
+KR-SO-0042,Gantungan Kirana Living Plus 042,Storage & Organizer,Gantungan,Kirana Living,64900,29200,2025-11-18
+KR-SO-0043,Box Penyimpanan Kirana Living Natura 043,Storage & Organizer,Box Penyimpanan,Kirana Living,71900,34400,2022-01-19
+KR-SO-0044,Rak Rapi Mini 044,Storage & Organizer,Rak,Kirana Living,83900,39700,2023-03-23
+KR-SO-0045,Gantungan Simpana Nordic 045,Storage & Organizer,Gantungan,Kirana Living,64900,33700,2021-12-05
+KR-SO-0046,Box Penyimpanan Rapi Basic 046,Storage & Organizer,Box Penyimpanan,Simpana,63900,32700,2023-10-31
+KR-SO-0047,Rak Rapi Natura 047,Storage & Organizer,Rak,Simpana,159900,81000,2022-08-04
+KR-SO-0048,Gantungan Simpana Nordic 048,Storage & Organizer,Gantungan,Simpana,44900,22100,2023-05-28
+KR-SO-0049,Box Penyimpanan Rapi Natura 049,Storage & Organizer,Box Penyimpanan,Kirana Living,69900,33600,2022-08-22
+KR-SO-0050,Rak Simpana Premium 050,Storage & Organizer,Rak,Rapi,208900,102100,2023-08-23
+KR-SO-0051,Gantungan Rapi Natura 051,Storage & Organizer,Gantungan,Kirana Living,78900,34200,2022-02-16
+KR-SO-0052,Box Penyimpanan Rapi Classic 052,Storage & Organizer,Box Penyimpanan,Kirana Living,46900,23200,2021-11-24
+KR-SO-0053,Rak Simpana Natura 053,Storage & Organizer,Rak,Simpana,145900,67900,2023-05-12
+KR-SO-0054,Gantungan Rapi Premium 054,Storage & Organizer,Gantungan,Simpana,142900,70100,2021-11-05
+KR-SO-0055,Box Penyimpanan Kirana Living Pro 055,Storage & Organizer,Box Penyimpanan,Rapi,150900,67700,2022-12-18
+KR-SO-0056,Rak Kirana Living Plus 056,Storage & Organizer,Rak,Simpana,148900,74900,2022-08-31
+KR-SO-0057,Gantungan Kirana Living Nordic 057,Storage & Organizer,Gantungan,Rapi,136900,65800,2022-01-25
+KR-SO-0058,Box Penyimpanan Rapi Nordic 058,Storage & Organizer,Box Penyimpanan,Kirana Living,51900,23000,2022-07-23
+KR-SO-0059,Rak Simpana Mini 059,Storage & Organizer,Rak,Rapi,90900,44300,2023-05-06
+KR-SO-0060,Gantungan Simpana Nordic 060,Storage & Organizer,Gantungan,Rapi,73900,36100,2022-05-05
+KR-SO-0061,Box Penyimpanan Rapi Plus 061,Storage & Organizer,Box Penyimpanan,Simpana,92900,43400,2023-10-20
+KR-SO-0062,Rak Simpana Nordic 062,Storage & Organizer,Rak,Simpana,49900,25000,2023-11-19
+KR-SO-0063,Gantungan Simpana Plus 063,Storage & Organizer,Gantungan,Simpana,69900,33200,2025-03-21
+KR-SO-0064,Box Penyimpanan Rapi Pro 064,Storage & Organizer,Box Penyimpanan,Simpana,52900,23500,2022-09-08
+KR-SO-0065,Rak Kirana Living Basic 065,Storage & Organizer,Rak,Rapi,156900,81200,2021-12-05
+KR-SO-0066,Gantungan Kirana Living Classic 066,Storage & Organizer,Gantungan,Kirana Living,217900,95700,2022-07-24
+KR-SO-0067,Box Penyimpanan Rapi Mini 067,Storage & Organizer,Box Penyimpanan,Simpana,102900,53400,2021-07-24
+KR-SO-0068,Rak Rapi Nordic 068,Storage & Organizer,Rak,Rapi,96900,43100,2022-08-13
+KR-SO-0069,Gantungan Rapi Premium 069,Storage & Organizer,Gantungan,Kirana Living,77900,34900,2023-04-24
+KR-SO-0070,Box Penyimpanan Simpana Plus 070,Storage & Organizer,Box Penyimpanan,Rapi,210900,100100,2023-03-24

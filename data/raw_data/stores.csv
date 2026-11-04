@@ -1,0 +1,19 @@
+store_code,store_name,city,province,region,store_type,open_date,selling_area_sqm,status
+JKT-01,KIRANA Jakarta Selatan,Jakarta Selatan,DKI Jakarta,Jabodetabek,Flagship,2019-03-01,1200,Active
+JKT-02,KIRANA Jakarta Barat,Jakarta Barat,DKI Jakarta,Jabodetabek,Regular,2020-02-01,800,Active
+JKT-03,KIRANA Jakarta Utara,Jakarta Utara,DKI Jakarta,Jabodetabek,Regular,2021-06-01,750,Active
+BKS-01,KIRANA Bekasi,Bekasi,Jawa Barat,Jabodetabek,Regular,2020-09-01,700,Active
+TGR-01,KIRANA Tangerang,Tangerang,Banten,Jabodetabek,Regular,2021-01-01,700,Active
+DPK-01,KIRANA Depok,Depok,Jawa Barat,Jabodetabek,Express,2022-04-01,400,Active
+BGR-01,KIRANA Bogor,Bogor,Jawa Barat,Jabodetabek,Regular,2021-08-01,650,Active
+BDG-01,KIRANA Bandung Dago,Bandung,Jawa Barat,Jawa Barat,Flagship,2019-11-01,1000,Active
+BDG-02,KIRANA Bandung Kopo,Bandung,Jawa Barat,Jawa Barat,Regular,2022-02-01,600,Active
+SMG-01,KIRANA Semarang,Semarang,Jawa Tengah,Jateng & DIY,Regular,2020-12-01,700,Active
+YGY-01,KIRANA Yogyakarta,Jogja,DI Yogyakarta,Jateng & DIY,Regular,2021-03-01,650,Active
+SOL-01,KIRANA Solo,Solo,Jawa Tengah,Jateng & DIY,Express,2023-05-01,380,Active
+SBY-01,KIRANA Surabaya Pusat,Surabaya,Jawa Timur,Jawa Timur,Flagship,2019-07-01,1100,Active
+SBY-02,KIRANA Surabaya Barat,Surabaya,Jawa Timur,Jawa Timur,Regular,2022-09-01,650,Active
+MLG-01,KIRANA Malang,Malang,Jawa Timur,Jawa Timur,Regular,2021-10-01,600,Active
+DPS-01,KIRANA Denpasar,Denpasar,Bali,Bali & Nusa Tenggara,Regular,2025-01-15,700,Active
+MDN-01,KIRANA Medan,Medan,Sumatera Utara,Sumatera,Regular,2021-05-01,750,Active
+PLM-01,KIRANA Palembang,Palembang,Sumatera Selatan,Sumatera,Regular,2022-11-01,600,Active

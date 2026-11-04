@@ -1,0 +1,6 @@
+channel,fee_pct_of_net_sales,valid_from,valid_to,note
+Store,0.7,2024-01-01,2099-12-31,MDR EDC/QRIS rata-rata
+Website,2.2,2024-01-01,2099-12-31,Biaya payment gateway
+Mobile App,2.2,2024-01-01,2099-12-31,Biaya payment gateway
+Marketplace,9.0,2024-01-01,2025-03-31,Komisi + biaya layanan marketplace
+Marketplace,11.5,2025-04-01,2099-12-31,Komisi + biaya layanan marketplace (naik per April 2025)
